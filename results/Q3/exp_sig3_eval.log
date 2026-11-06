@@ -1,0 +1,15 @@
+ptrue_b recomputed equals sig2 value: max abs diff 1.0000
+single ptrue_b  AUROC id 0.8282 dev 0.8486 ood 0.8359
+single ptrue_k  AUROC id 0.8229 dev 0.8441 ood 0.8548
+single ptrue_f  AUROC id 0.8214 dev 0.8441 ood 0.8338
+probe hp14  AUROC id 0.7478 dev 0.7583 ood 0.8953
+probe hv14  AUROC id 0.8219 dev 0.8140 ood 0.8316
+probe hv20  AUROC id 0.8329 dev 0.8187 ood 0.8418
+probe hv26  AUROC id 0.8386 dev 0.8329 ood 0.8662
+v1 features (two stage)                  id AUROC 0.8511 ECE 0.0143 | ood AUROC 0.8622 ECE 0.0310 | set w/o sel id 0.6123 ood 0.6104 mean 0.6113 | EV-rule sel train 0.0005 dev 0.0300 ood 0.0100
+A = new (two stage)                      id AUROC 0.8839 ECE 0.0114 | ood AUROC 0.8946 ECE 0.0369 | set w/o sel id 0.6242 ood 0.6192 mean 0.6217 | EV-rule sel train 0.0046 dev 0.0404 ood 0.0050
+A + ptrue_k                              id AUROC 0.8837 ECE 0.0116 | ood AUROC 0.8958 ECE 0.0437 | set w/o sel id 0.6240 ood 0.6174 mean 0.6207 | EV-rule sel train 0.0052 dev 0.0396 ood 0.0050
+A + ptrue_f                              id AUROC 0.8838 ECE 0.0114 | ood AUROC 0.8945 ECE 0.0369 | set w/o sel id 0.6241 ood 0.6192 mean 0.6217 | EV-rule sel train 0.0113 dev 0.0396 ood 0.0050
+A + hv14 probe                           id AUROC 0.8851 ECE 0.0094 | ood AUROC 0.8893 ECE 0.0360 | set w/o sel id 0.6252 ood 0.6177 mean 0.6215 | EV-rule sel train 0.0096 dev 0.0412 ood 0.0000
+A + hv20 probe                           id AUROC 0.8851 ECE 0.0107 | ood AUROC 0.8925 ECE 0.0333 | set w/o sel id 0.6248 ood 0.6197 mean 0.6223 | EV-rule sel train 0.0045 dev 0.0392 ood 0.0050
+A + ptrue_k + ptrue_f + hv20             id AUROC 0.8846 ECE 0.0130 | ood AUROC 0.8936 ECE 0.0406 | set w/o sel id 0.6239 ood 0.6177 mean 0.6208 | EV-rule sel train 0.0075 dev 0.0396 ood 0.0050

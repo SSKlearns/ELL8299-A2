@@ -1,0 +1,9 @@
+current: LR C=1 (probe OOF seed 0)         id AUROC 0.8487 ECE 0.0162 set 0.6116 | ood AUROC 0.9010 ECE 0.0280 set 0.6243 | mean 0.6180
+LR C=0.1                                   id AUROC 0.8490 ECE 0.0155 set 0.6112 | ood AUROC 0.8993 ECE 0.0242 set 0.6250 | mean 0.6181
+LR C=10                                    id AUROC 0.8483 ECE 0.0160 set 0.6111 | ood AUROC 0.9012 ECE 0.0296 set 0.6239 | mean 0.6175
+spline-LR (additive non-linear)            id AUROC 0.8561 ECE 0.0179 set 0.6127 | ood AUROC 0.9133 ECE 0.0219 set 0.6305 | mean 0.6216
+gradient boosting depth 3                  id AUROC 0.8490 ECE 0.0241 set 0.6091 | ood AUROC 0.9205 ECE 0.0349 set 0.6324 | mean 0.6208
+probe C=0.01                               id AUROC 0.8537 ECE 0.0146 set 0.6172 | ood AUROC 0.9013 ECE 0.0250 set 0.6254 | mean 0.6213
+probe C=0.02                               id AUROC 0.8515 ECE 0.0149 set 0.6143 | ood AUROC 0.9025 ECE 0.0259 set 0.6255 | mean 0.6199
+probe C=0.1                                id AUROC 0.8470 ECE 0.0174 set 0.6103 | ood AUROC 0.8995 ECE 0.0308 set 0.6229 | mean 0.6166
+probe on layers 14+20 concatenated         id AUROC 0.8514 ECE 0.0128 set 0.6165 | ood AUROC 0.8997 ECE 0.0337 set 0.6231 | mean 0.6198

@@ -1,0 +1,8 @@
+before: dev 0.1280 ood 0.1000
+epoch 0 step 50 loss 0.8889
+epoch 0 step 100 loss 0.3182
+after epoch 0: dev 0.1360 ood 0.1150
+epoch 1 step 150 loss 0.1790
+epoch 1 step 200 loss 0.3560
+epoch 1 step 250 loss 0.3632
+after epoch 1: dev 0.1420 ood 0.1150

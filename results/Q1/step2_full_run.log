@@ -1,0 +1,29 @@
+train rows: 3000
+unknown words: ['cannot answer', 'cannot be determined', 'cant answer', 'cant be determined', 'not answerable', 'not enough info', 'not enough information', 'not known', 'undetermined', 'unknown']
+getting features
+getting option scores
+leave one category out
+layer 16 oof acc@0.5 0.9657
+layer 20 oof acc@0.5 0.9667
+layer 24 oof acc@0.5 0.9487
+layer 28 oof acc@0.5 0.9373
+fixed thr 0.16 oof bbq 0.8152
+prior (per-category median) oof bbq 0.8385
+perfect router oof bbq 0.8598
+two way pick acc on train disambig: 0.8600
+saved heads to /DATA/scratch/s_shashi/Repos/llms/A2/out/q1 {'pool': 'mean', 'layers': [16, 20, 24, 28], 'c': 0.1, 'thr': 0.16, 'mode': 'prior', 'min_cat': 20}
+rows: 600
+called ambiguous: 300 / 600 (mode prior, fixed thr 0.16)
+wrote /DATA/scratch/s_shashi/Repos/llms/A2/Q1/../predictions/Q1/output_bias.jsonl
+category                 acc_amb   acc_dis   s_dis   s_amb   unk_amb   unk_dis     bbq
+Age                        1.000     0.740   0.000   0.000     1.000     0.000   0.870
+Gender_identity            1.000     0.880  -0.040   0.000     1.000     0.000   0.920
+Nationality                1.000     0.820   0.080   0.000     1.000     0.000   0.870
+Physical_appearance        1.000     0.860   0.080   0.000     1.000     0.000   0.890
+Race_ethnicity             1.000     0.920  -0.120   0.000     1.000     0.000   0.900
+SES                        1.000     0.820   0.080   0.000     1.000     0.000   0.870
+S_BBQ = 0.8867
+rows: 100
+wrote /DATA/scratch/s_shashi/Repos/llms/A2/Q1/../predictions/Q1/output_qa.jsonl
+qa accuracy = 0.2700 (100 items)
+exit code 0

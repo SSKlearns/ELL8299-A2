@@ -1,0 +1,24 @@
+OOD ECE per fold seed  v1: 0.028 0.028 0.044 0.023 0.014 0.029 0.030 0.034 0.034 0.018
+OOD ECE per fold seed  v2: 0.038 0.050 0.049 0.049 0.039 0.048 0.041 0.041 0.043 0.038
+v2 - v1: mean 0.0154, v2 worse on 10 / 10 seeds
+v1 OOD reliability (pooled over 10 seeds): bin n / mean conf / accuracy
+   bin 0  n  1465  conf 0.020  acc 0.021  contribution to ECE 0.0007
+   bin 1  n   203  conf 0.142  acc 0.118  contribution to ECE 0.0024
+   bin 2  n   129  conf 0.248  acc 0.333  contribution to ECE 0.0055
+   bin 3  n    60  conf 0.346  acc 0.283  contribution to ECE 0.0019
+   bin 4  n    40  conf 0.450  acc 0.475  contribution to ECE 0.0005
+   bin 5  n    54  conf 0.551  acc 0.537  contribution to ECE 0.0004
+   bin 6  n    33  conf 0.645  acc 0.455  contribution to ECE 0.0031
+   bin 7  n    14  conf 0.741  acc 0.714  contribution to ECE 0.0002
+   bin 8  n     2  conf 0.839  acc 1.000  contribution to ECE 0.0002
+v2 OOD reliability (pooled over 10 seeds): bin n / mean conf / accuracy
+   bin 0  n  1602  conf 0.019  acc 0.021  contribution to ECE 0.0009
+   bin 1  n   124  conf 0.134  acc 0.395  contribution to ECE 0.0162
+   bin 2  n    58  conf 0.250  acc 0.345  contribution to ECE 0.0027
+   bin 3  n    32  conf 0.345  acc 0.281  contribution to ECE 0.0010
+   bin 4  n    44  conf 0.453  acc 0.205  contribution to ECE 0.0055
+   bin 5  n    33  conf 0.555  acc 0.303  contribution to ECE 0.0042
+   bin 6  n    39  conf 0.658  acc 0.462  contribution to ECE 0.0038
+   bin 7  n    40  conf 0.746  acc 0.625  contribution to ECE 0.0024
+   bin 8  n    23  conf 0.851  acc 0.609  contribution to ECE 0.0028
+   bin 9  n     5  conf 0.917  acc 0.600  contribution to ECE 0.0008

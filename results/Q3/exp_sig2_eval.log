@@ -1,0 +1,44 @@
+
+######## mode fixed | accuracy id 0.1320 dev 0.1300 ood 0.0950
+   single agree    AUROC id 0.8132 ood 0.8556
+   single lp_mean  AUROC id 0.8214 ood 0.7712
+   single ptrue    AUROC id 0.7195 ood 0.7440
+   single ptrue_b  AUROC id 0.8282 ood 0.8359
+   single ag_zero  AUROC id 0.6715 ood 0.6887
+   single ag_other AUROC id 0.7292 ood 0.7108
+   probe hp14  AUROC id 0.7478 ood 0.8953
+   probe hp20  AUROC id 0.7683 ood 0.8779
+   probe ha14  AUROC id 0.7894 ood 0.8046
+   probe ha20  AUROC id 0.7530 ood 0.7581
+   v1 features                        id AUROC 0.8480 ECE 0.0097 | dev AUROC 0.8516 ECE 0.0233 | ood AUROC 0.8780 ECE 0.0390 | set w/o sel id 0.6128 ood 0.6130 mean 0.6129 | EV-rule sel id 0.0027 dev 0.0300 ood 0.0083
+   + ptrue                            id AUROC 0.8652 ECE 0.0124 | dev AUROC 0.8721 ECE 0.0292 | ood AUROC 0.8835 ECE 0.0443 | set w/o sel id 0.6176 ood 0.6131 mean 0.6153 | EV-rule sel id 0.0191 dev 0.0327 ood 0.0000
+   + ptrue_b                          id AUROC 0.8630 ECE 0.0165 | dev AUROC 0.8723 ECE 0.0258 | ood AUROC 0.8805 ECE 0.0375 | set w/o sel id 0.6155 ood 0.6143 mean 0.6149 | EV-rule sel id 0.0143 dev 0.0300 ood 0.0000
+   + ptrue + ptrue_b                  id AUROC 0.8682 ECE 0.0124 | dev AUROC 0.8780 ECE 0.0224 | ood AUROC 0.8834 ECE 0.0378 | set w/o sel id 0.6186 ood 0.6152 mean 0.6169 | EV-rule sel id 0.0227 dev 0.0327 ood 0.0000
+   + sem_ent                          id AUROC 0.8474 ECE 0.0089 | dev AUROC 0.8517 ECE 0.0221 | ood AUROC 0.8773 ECE 0.0381 | set w/o sel id 0.6128 ood 0.6131 mean 0.6130 | EV-rule sel id 0.0040 dev 0.0300 ood 0.0083
+   + ag_zero + ag_other               id AUROC 0.8622 ECE 0.0100 | dev AUROC 0.8620 ECE 0.0255 | ood AUROC 0.8824 ECE 0.0359 | set w/o sel id 0.6174 ood 0.6155 mean 0.6164 | EV-rule sel id 0.0079 dev 0.0327 ood 0.0083
+   + knn_sim                          id AUROC 0.8471 ECE 0.0099 | dev AUROC 0.8499 ECE 0.0237 | ood AUROC 0.8797 ECE 0.0318 | set w/o sel id 0.6124 ood 0.6160 mean 0.6142 | EV-rule sel id 0.0007 dev 0.0233 ood 0.0083
+   + ptrue + ptrue_b + ag_zero + ag_other id AUROC 0.8773 ECE 0.0090 | dev AUROC 0.8860 ECE 0.0226 | ood AUROC 0.8893 ECE 0.0488 | set w/o sel id 0.6227 ood 0.6135 mean 0.6181 | EV-rule sel id 0.0287 dev 0.0407 ood 0.0000
+   + all                              id AUROC 0.8760 ECE 0.0077 | dev AUROC 0.8847 ECE 0.0241 | ood AUROC 0.8890 ECE 0.0488 | set w/o sel id 0.6228 ood 0.6134 mean 0.6181 | EV-rule sel id 0.0247 dev 0.0393 ood 0.0000
+   + all, spline calibrator           id AUROC 0.8821 ECE 0.0169 | dev AUROC 0.8860 ECE 0.0279 | ood AUROC 0.8874 ECE 0.0405 | set w/o sel id 0.6217 ood 0.6156 mean 0.6187 | EV-rule sel id 0.0092 dev 0.0300 ood 0.0083
+
+######## mode knn | accuracy id 0.1540 dev 0.1520 ood 0.1450
+   single agree    AUROC id 0.8160 ood 0.8855
+   single lp_mean  AUROC id 0.8054 ood 0.8530
+   single ptrue    AUROC id 0.6795 ood 0.7804
+   single ptrue_b  AUROC id 0.8034 ood 0.8606
+   single ag_zero  AUROC id 0.6425 ood 0.6390
+   single ag_other AUROC id 0.6700 ood 0.6361
+   probe hp14  AUROC id 0.7258 ood 0.8768
+   probe hp20  AUROC id 0.7475 ood 0.8582
+   probe ha14  AUROC id 0.7385 ood 0.8564
+   probe ha20  AUROC id 0.7788 ood 0.8832
+   v1 features                        id AUROC 0.8384 ECE 0.0147 | dev AUROC 0.8550 ECE 0.0434 | ood AUROC 0.8805 ECE 0.0364 | set w/o sel id 0.6079 ood 0.6147 mean 0.6113 | EV-rule sel id 0.0085 dev 0.0033 ood 0.0333
+   + ptrue                            id AUROC 0.8491 ECE 0.0153 | dev AUROC 0.8769 ECE 0.0218 | ood AUROC 0.8901 ECE 0.0437 | set w/o sel id 0.6113 ood 0.6155 mean 0.6134 | EV-rule sel id 0.0101 dev 0.0327 ood 0.0117
+   + ptrue_b                          id AUROC 0.8488 ECE 0.0099 | dev AUROC 0.8709 ECE 0.0198 | ood AUROC 0.8887 ECE 0.0571 | set w/o sel id 0.6129 ood 0.6105 mean 0.6117 | EV-rule sel id 0.0148 dev 0.0133 ood 0.0083
+   + ptrue + ptrue_b                  id AUROC 0.8516 ECE 0.0129 | dev AUROC 0.8805 ECE 0.0267 | ood AUROC 0.8909 ECE 0.0562 | set w/o sel id 0.6129 ood 0.6116 mean 0.6122 | EV-rule sel id 0.0193 dev 0.0167 ood 0.0083
+   + sem_ent                          id AUROC 0.8380 ECE 0.0140 | dev AUROC 0.8549 ECE 0.0394 | ood AUROC 0.8793 ECE 0.0380 | set w/o sel id 0.6080 ood 0.6138 mean 0.6109 | EV-rule sel id 0.0072 dev 0.0033 ood 0.0333
+   + ag_zero + ag_other               id AUROC 0.8411 ECE 0.0134 | dev AUROC 0.8585 ECE 0.0274 | ood AUROC 0.8784 ECE 0.0498 | set w/o sel id 0.6092 ood 0.6095 mean 0.6094 | EV-rule sel id 0.0076 dev 0.0100 ood 0.0083
+   + knn_sim                          id AUROC 0.8382 ECE 0.0143 | dev AUROC 0.8541 ECE 0.0389 | ood AUROC 0.8792 ECE 0.0354 | set w/o sel id 0.6080 ood 0.6146 mean 0.6113 | EV-rule sel id 0.0079 dev 0.0033 ood 0.0167
+   + ptrue + ptrue_b + ag_zero + ag_other id AUROC 0.8516 ECE 0.0109 | dev AUROC 0.8789 ECE 0.0216 | ood AUROC 0.8859 ECE 0.0460 | set w/o sel id 0.6136 ood 0.6133 mean 0.6134 | EV-rule sel id 0.0147 dev 0.0287 ood 0.0083
+   + all                              id AUROC 0.8516 ECE 0.0099 | dev AUROC 0.8792 ECE 0.0224 | ood AUROC 0.8820 ECE 0.0487 | set w/o sel id 0.6139 ood 0.6111 mean 0.6125 | EV-rule sel id 0.0172 dev 0.0273 ood 0.0083
+   + all, spline calibrator           id AUROC 0.8558 ECE 0.0165 | dev AUROC 0.8824 ECE 0.0311 | ood AUROC 0.8941 ECE 0.0318 | set w/o sel id 0.6131 ood 0.6208 mean 0.6169 | EV-rule sel id 0.0215 dev 0.0200 ood 0.0083

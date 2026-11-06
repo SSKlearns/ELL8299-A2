@@ -1,0 +1,4 @@
+short_5shot  | id acc 0.150 (2.4 words) | id vote acc 0.150 | ood acc 0.100 (1.8 words) | ood vote acc 0.110
+full_5shot   | id acc 0.146 (4.0 words) | id vote acc 0.144 | ood acc 0.105 (2.0 words) | ood vote acc 0.110
+full_10shot  | id acc 0.142 (3.2 words) | ood acc 0.115 (2.0 words)
+short_0shot  | id acc 0.098 (2.3 words) | ood acc 0.095 (1.8 words)

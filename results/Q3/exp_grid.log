@@ -1,0 +1,18 @@
+single ag_ks AUROC id 0.8104 ood 0.8007
+v1 C=1 w=5                                       id AUROC 0.8468 ECE 0.0100 | ood AUROC 0.8775 ECE 0.0349 | set w/o sel id 0.6123 ood 0.6142 mean 0.6132 (sd over fold seeds 0.0018)
+new C=0.1 w=1                                    id AUROC 0.8810 ECE 0.0095 | ood AUROC 0.8878 ECE 0.0526 | set w/o sel id 0.6238 ood 0.6117 mean 0.6178 (sd over fold seeds 0.0009)
+new C=0.1 w=3                                    id AUROC 0.8798 ECE 0.0121 | ood AUROC 0.8891 ECE 0.0499 | set w/o sel id 0.6226 ood 0.6131 mean 0.6178 (sd over fold seeds 0.0011)
+new C=0.1 w=5                                    id AUROC 0.8778 ECE 0.0133 | ood AUROC 0.8883 ECE 0.0517 | set w/o sel id 0.6215 ood 0.6122 mean 0.6169 (sd over fold seeds 0.0016)
+new C=0.3 w=1                                    id AUROC 0.8807 ECE 0.0097 | ood AUROC 0.8888 ECE 0.0538 | set w/o sel id 0.6237 ood 0.6117 mean 0.6177 (sd over fold seeds 0.0008)
+new C=0.3 w=3                                    id AUROC 0.8793 ECE 0.0113 | ood AUROC 0.8897 ECE 0.0513 | set w/o sel id 0.6226 ood 0.6128 mean 0.6177 (sd over fold seeds 0.0010)
+new C=0.3 w=5                                    id AUROC 0.8769 ECE 0.0103 | ood AUROC 0.8894 ECE 0.0466 | set w/o sel id 0.6222 ood 0.6143 mean 0.6182 (sd over fold seeds 0.0009)
+new C=1 w=1                                      id AUROC 0.8805 ECE 0.0110 | ood AUROC 0.8896 ECE 0.0500 | set w/o sel id 0.6231 ood 0.6132 mean 0.6182 (sd over fold seeds 0.0006)
+new C=1 w=3                                      id AUROC 0.8788 ECE 0.0099 | ood AUROC 0.8917 ECE 0.0481 | set w/o sel id 0.6230 ood 0.6145 mean 0.6187 (sd over fold seeds 0.0010)
+new C=1 w=5                                      id AUROC 0.8762 ECE 0.0103 | ood AUROC 0.8904 ECE 0.0441 | set w/o sel id 0.6219 ood 0.6154 mean 0.6187 (sd over fold seeds 0.0014)
+new + ag_ks C=1 w=5                              id AUROC 0.8798 ECE 0.0124 | ood AUROC 0.8912 ECE 0.0463 | set w/o sel id 0.6225 ood 0.6150 mean 0.6187 (sd over fold seeds 0.0014)
+new + ag_ks C=0.3 w=3                            id AUROC 0.8827 ECE 0.0125 | ood AUROC 0.8931 ECE 0.0449 | set w/o sel id 0.6234 ood 0.6161 mean 0.6197 (sd over fold seeds 0.0011)
+
+paired bootstrap over questions, new C=1 w=5 minus v1, fold seed 0
+   id   AUROC gain 0.0293  95% CI [0.0179, 0.0408]  P(gain <= 0) 0.000
+   dev  AUROC gain 0.0361  95% CI [0.0128, 0.0611]  P(gain <= 0) 0.000
+   ood  AUROC gain 0.0152  95% CI [-0.0198, 0.0548]  P(gain <= 0) 0.210

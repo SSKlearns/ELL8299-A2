@@ -1,0 +1,18 @@
+train rows: 3000
+unknown words: ['cannot answer', 'cannot be determined', 'cant answer', 'cant be determined', 'not answerable', 'not enough info', 'not enough information', 'not known', 'undetermined', 'unknown']
+getting features
+getting option scores
+leave one category out
+layer 16 oof acc@0.5 0.9657
+layer 20 oof acc@0.5 0.9667
+layer 24 oof acc@0.5 0.9487
+layer 28 oof acc@0.5 0.9373
+fixed thr 0.23 oof bbq 0.8391
+prior (per-category median) oof bbq 0.8648
+perfect router oof bbq 0.8901
+two way pick acc on train disambig: 0.8833
+saved heads to /DATA/scratch/s_shashi/Repos/llms/A2/out/q1_v4 {'pool': 'mean', 'layers': [16, 20, 24, 28], 'c': 0.1, 'thr': 0.23, 'mode': 'prior', 'min_cat': 20}
+
+real	3m18.838s
+user	7m59.817s
+sys	0m21.226s

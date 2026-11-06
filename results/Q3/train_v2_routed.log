@@ -1,0 +1,12 @@
+=== calibrators, 5-fold out-of-fold: in-domain questions use the two-stage model on all features, out-of-domain questions use the small model
+  two-stage, all features  dev(id)  AUROC 0.8957 ECE 0.0278 sel 0.0500 (cov 0.050 risk 0.200) set 0.6393
+  two-stage, all features  dev_ood  AUROC 0.9040 ECE 0.0516 sel 0.0000 (cov 0.045 risk 0.333) set 0.6175
+  two-stage, all features  train    AUROC 0.8862 ECE 0.0124 sel 0.0000 (cov 0.040 risk 0.329) set 0.6246
+  small model              dev(id)  AUROC 0.8468 ECE 0.0224 sel 0.0300 (cov 0.030 risk 0.200) set 0.6181
+  small model              dev_ood  AUROC 0.8994 ECE 0.0281 sel 0.0250 (cov 0.025 risk 0.200) set 0.6321
+  small model              train    AUROC 0.8493 ECE 0.0190 sel 0.0000 (cov 0.022 risk 0.333) set 0.6101
+  routed by domain         dev(id)  AUROC 0.8957 ECE 0.0278 sel 0.0500 (cov 0.050 risk 0.200) set 0.6393
+  routed by domain         dev_ood  AUROC 0.8994 ECE 0.0281 sel 0.0250 (cov 0.025 risk 0.200) set 0.6321
+  routed by domain         train    AUROC 0.8862 ECE 0.0124 sel 0.0000 (cov 0.040 risk 0.329) set 0.6246
+OOF mean set score of dev(id) and dev_ood: 0.6357
+saved to /DATA/scratch/s_shashi/Repos/llms/A2/out/q3_v2 {'shots': [['who sold out jesus for 30 pieces of silver', 'Judas Iscariot'], ['what does g stand for in ncis los angeles', 'Grisha'], ['where wa

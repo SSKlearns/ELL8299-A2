@@ -1,0 +1,76 @@
+setup done: {'key': 15485863, 'gamma': 0.25, 'delta': 1.75, 'score': 'oz', 'n_real': 151643, 'size': 151936, 'new_tokens': 200} green tokens: 37910
+generated 32 / 100
+generated 64 / 100
+generated 96 / 100
+generated 100 / 100
+wrote /DATA/scratch/s_shashi/Repos/llms/A2/out/q2/g0.25_d1.75_oz/generated_42.jsonl
+generation format ok: 100 rows, all 200 tokens, text matches decode
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+paraphrased 16 / 100
+paraphrased 32 / 100
+paraphrased 48 / 100
+paraphrased 64 / 100
+paraphrased 80 / 100
+paraphrased 96 / 100
+paraphrased 100 / 100
+wrote 4 perturbed files to /DATA/scratch/s_shashi/Repos/llms/A2/out/q2/g0.25_d1.75_oz
+wrote human.jsonl and human_short.jsonl with 100 texts
+wrote /DATA/scratch/s_shashi/Repos/llms/A2/out/q2/g0.25_d1.75_oz/scores_clean.jsonl (oz)
+wrote /DATA/scratch/s_shashi/Repos/llms/A2/out/q2/g0.25_d1.75_oz/scores_short.jsonl (oz)
+wrote /DATA/scratch/s_shashi/Repos/llms/A2/out/q2/g0.25_d1.75_oz/scores_substitution.jsonl (oz)
+wrote /DATA/scratch/s_shashi/Repos/llms/A2/out/q2/g0.25_d1.75_oz/scores_paraphrase.jsonl (oz)
+wrote /DATA/scratch/s_shashi/Repos/llms/A2/out/q2/g0.25_d1.75_oz/scores_human.jsonl (oz)
+wrote /DATA/scratch/s_shashi/Repos/llms/A2/out/q2/g0.25_d1.75_oz/scores_human_short.jsonl (oz)
+clean         TPR@1%FPR = 1.000  (tau 2.137, mean pos score 10.940)
+short         TPR@1%FPR = 1.000  (tau 2.587, mean pos score 5.504)
+substitution  TPR@1%FPR = 1.000  (tau 2.137, mean pos score 7.568)
+paraphrase    TPR@1%FPR = 0.730  (tau 2.137, mean pos score 3.667)
+S_det = 0.9325
+gamma 0.25 delta 1.75
+score         clean    short    subst     para    S_det
+plain         1.000    0.970    1.000    0.650    0.905
+unique        1.000    0.920    0.990    0.540    0.863
+weighted      0.990    0.920    0.990    0.600    0.875
+mz            1.000    1.000    1.000    0.730    0.932
+oz            1.000    1.000    1.000    0.730    0.932
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00, 35.86it/s]
+/DATA/scratch/s_shashi/Repos/llms/A2/Q2/../out/q2/g0.25_d1.75_oz/generated_42.jsonl median PPL(M-oracle) = 28.924
+/DATA/scratch/s_shashi/Repos/llms/A2/Q2/../out/q2/plain/generated_42.jsonl median PPL(M-oracle) = 22.564
+Q = 1.2819 (first / second)
+setup done: {'key': 15485863, 'gamma': 0.25, 'delta': 0.0, 'score': 'oz', 'n_real': 151643, 'size': 151936, 'new_tokens': 200} green tokens: 37910
+generated 32 / 100
+generated 64 / 100
+generated 96 / 100
+generated 100 / 100
+wrote /DATA/scratch/s_shashi/Repos/llms/A2/out/q2/plain_s43/generated_43.jsonl
+setup done: {'key': 15485863, 'gamma': 0.25, 'delta': 1.5, 'score': 'oz', 'n_real': 151643, 'size': 151936, 'new_tokens': 200} green tokens: 37910
+generated 32 / 100
+generated 64 / 100
+generated 96 / 100
+generated 100 / 100
+wrote /DATA/scratch/s_shashi/Repos/llms/A2/out/q2/g0.25_d1.5_s43/generated_43.jsonl
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00, 36.24it/s]
+/DATA/scratch/s_shashi/Repos/llms/A2/Q2/../out/q2/g0.25_d1.5_s43/generated_43.jsonl median PPL(M-oracle) = 27.109
+/DATA/scratch/s_shashi/Repos/llms/A2/Q2/../out/q2/plain_s43/generated_43.jsonl median PPL(M-oracle) = 23.709
+Q = 1.1434 (first / second)
+setup done: {'key': 15485863, 'gamma': 0.25, 'delta': 1.75, 'score': 'oz', 'n_real': 151643, 'size': 151936, 'new_tokens': 200} green tokens: 37910
+generated 32 / 100
+generated 64 / 100
+generated 96 / 100
+generated 100 / 100
+wrote /DATA/scratch/s_shashi/Repos/llms/A2/out/q2/g0.25_d1.75_s43/generated_43.jsonl
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00, 36.05it/s]
+/DATA/scratch/s_shashi/Repos/llms/A2/Q2/../out/q2/g0.25_d1.75_s43/generated_43.jsonl median PPL(M-oracle) = 29.059
+/DATA/scratch/s_shashi/Repos/llms/A2/Q2/../out/q2/plain_s43/generated_43.jsonl median PPL(M-oracle) = 23.709
+Q = 1.2256 (first / second)
+setup done: {'key': 15485863, 'gamma': 0.25, 'delta': 2.0, 'score': 'oz', 'n_real': 151643, 'size': 151936, 'new_tokens': 200} green tokens: 37910
+generated 32 / 100
+generated 64 / 100
+generated 96 / 100
+generated 100 / 100
+wrote /DATA/scratch/s_shashi/Repos/llms/A2/out/q2/g0.25_d2.0_s43/generated_43.jsonl
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00, 34.29it/s]
+/DATA/scratch/s_shashi/Repos/llms/A2/Q2/../out/q2/g0.25_d2.0_s43/generated_43.jsonl median PPL(M-oracle) = 30.486
+/DATA/scratch/s_shashi/Repos/llms/A2/Q2/../out/q2/plain_s43/generated_43.jsonl median PPL(M-oracle) = 23.709
+Q = 1.2859 (first / second)
+exit code 0

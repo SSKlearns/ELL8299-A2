@@ -1,0 +1,14 @@
+train plain ident      dis acc 0.8567  BBQ(perfect router) 0.8652  {'Age': 0.782, 'Gender_identity': 0.855, 'Nationality': 0.9, 'Physical_appearance': 0.6, 'Race_ethnicity': 0.906, 'SES': 0.854}
+dev plain ident        dis acc 0.8433  BBQ(perfect router) 0.8850  {'Age': 0.76, 'Gender_identity': 0.88, 'Nationality': 0.82, 'Physical_appearance': 0.86, 'Race_ethnicity': 0.92, 'SES': 0.82}
+train plain swap       dis acc 0.8727  BBQ(perfect router) 0.8819  {'Age': 0.753, 'Gender_identity': 0.9, 'Nationality': 0.936, 'Physical_appearance': 0.65, 'Race_ethnicity': 0.918, 'SES': 0.846}
+dev plain swap         dis acc 0.8333  BBQ(perfect router) 0.8833  {'Age': 0.74, 'Gender_identity': 0.82, 'Nationality': 0.88, 'Physical_appearance': 0.88, 'Race_ethnicity': 0.9, 'SES': 0.78}
+train plain allperm    dis acc 0.8840  BBQ(perfect router) 0.8885  {'Age': 0.776, 'Gender_identity': 0.905, 'Nationality': 0.964, 'Physical_appearance': 0.667, 'Race_ethnicity': 0.932, 'SES': 0.846}
+dev plain allperm      dis acc 0.8567  BBQ(perfect router) 0.9050  {'Age': 0.74, 'Gender_identity': 0.86, 'Nationality': 0.94, 'Physical_appearance': 0.84, 'Race_ethnicity': 0.96, 'SES': 0.8}
+train facts ident      dis acc 0.8560  BBQ(perfect router) 0.8700  {'Age': 0.782, 'Gender_identity': 0.84, 'Nationality': 0.845, 'Physical_appearance': 0.583, 'Race_ethnicity': 0.922, 'SES': 0.869}
+dev facts ident        dis acc 0.8500  BBQ(perfect router) 0.8817  {'Age': 0.76, 'Gender_identity': 0.86, 'Nationality': 0.82, 'Physical_appearance': 0.86, 'Race_ethnicity': 0.96, 'SES': 0.84}
+train facts swap       dis acc 0.8720  BBQ(perfect router) 0.8780  {'Age': 0.735, 'Gender_identity': 0.865, 'Nationality': 0.927, 'Physical_appearance': 0.633, 'Race_ethnicity': 0.94, 'SES': 0.873}
+dev facts swap         dis acc 0.8467  BBQ(perfect router) 0.8767  {'Age': 0.76, 'Gender_identity': 0.8, 'Nationality': 0.9, 'Physical_appearance': 0.88, 'Race_ethnicity': 0.94, 'SES': 0.8}
+train who ident        dis acc 0.8300  BBQ(perfect router) 0.8579  {'Age': 0.724, 'Gender_identity': 0.812, 'Nationality': 0.827, 'Physical_appearance': 0.567, 'Race_ethnicity': 0.892, 'SES': 0.869}
+dev who ident          dis acc 0.8000  BBQ(perfect router) 0.8200  {'Age': 0.64, 'Gender_identity': 0.84, 'Nationality': 0.86, 'Physical_appearance': 0.8, 'Race_ethnicity': 0.86, 'SES': 0.8}
+train who swap         dis acc 0.8453  BBQ(perfect router) 0.8588  {'Age': 0.712, 'Gender_identity': 0.85, 'Nationality': 0.809, 'Physical_appearance': 0.65, 'Race_ethnicity': 0.9, 'SES': 0.881}
+dev who swap           dis acc 0.8067  BBQ(perfect router) 0.8567  {'Age': 0.62, 'Gender_identity': 0.76, 'Nationality': 0.92, 'Physical_appearance': 0.82, 'Race_ethnicity': 0.94, 'SES': 0.78}

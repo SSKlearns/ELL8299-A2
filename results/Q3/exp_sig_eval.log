@@ -1,0 +1,29 @@
+main answer equal to cached v1 answer: 1924 / 2700
+
+=== accuracy of each answer source
+   main  id(train+dev) 0.1312  dev 0.1280  ood 0.1000
+   zero  id(train+dev) 0.1060  dev 0.1040  ood 0.0950
+   alt   id(train+dev) 0.1244  dev 0.1360  ood 0.0950
+   knn   id(train+dev) 0.1492  dev 0.1580  ood 0.1300
+   vote4 id(train+dev) 0.1380  dev 0.1400  ood 0.1000
+   any of the 12 answers correct (oracle): id 0.2684 ood 0.2100
+
+=== single-signal AUROC (main answer correctness)
+   agree(8 samples)   id 0.7968  ood 0.8982
+   exp mean logprob   id 0.8059  ood 0.7794
+   ptrue              id 0.7090  ood 0.7524
+   ptrue_b            id 0.8033  ood 0.8421
+   ag_zero            id 0.6733  ood 0.6694
+   ag_alt             id 0.6869  ood 0.6306
+   ag_knn             id 0.7123  ood 0.7111
+   ag_prompts         id 0.7670  ood 0.7297
+   sem_ent            id 0.7862  ood 0.8864
+
+=== calibrator with extra signals (OOF, 3 fold seeds)
+v1 features                              id AUROC 0.8360 ECE 0.0106 | dev AUROC 0.8243 | ood AUROC 0.8931 ECE 0.0288 | set w/o selective: id 0.6085 ood 0.6215 mean 0.6150
++ ptrue                                  id AUROC 0.8548 ECE 0.0139 | dev AUROC 0.8532 | ood AUROC 0.8960 ECE 0.0327 | set w/o selective: id 0.6136 ood 0.6211 mean 0.6174
++ ptrue_b                                id AUROC 0.8524 ECE 0.0087 | dev AUROC 0.8521 | ood AUROC 0.8838 ECE 0.0404 | set w/o selective: id 0.6146 ood 0.6144 mean 0.6145
++ prompt agreement (3)                   id AUROC 0.8480 ECE 0.0116 | dev AUROC 0.8393 | ood AUROC 0.8919 ECE 0.0454 | set w/o selective: id 0.6121 ood 0.6155 mean 0.6138
++ semantic entropy                       id AUROC 0.8390 ECE 0.0112 | dev AUROC 0.8220 | ood AUROC 0.8914 ECE 0.0319 | set w/o selective: id 0.6093 ood 0.6198 mean 0.6146
++ ptrue_b + prompt agreement             id AUROC 0.8576 ECE 0.0120 | dev AUROC 0.8571 | ood AUROC 0.8868 ECE 0.0429 | set w/o selective: id 0.6152 ood 0.6146 mean 0.6149
++ all                                    id AUROC 0.8617 ECE 0.0087 | dev AUROC 0.8624 | ood AUROC 0.8931 ECE 0.0425 | set w/o selective: id 0.6176 ood 0.6169 mean 0.6173

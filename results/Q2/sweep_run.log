@@ -1,0 +1,233 @@
+setup done: {'key': 15485863, 'gamma': 0.25, 'delta': 1.0, 'score': 'unique', 'n_real': 151643, 'size': 151936, 'new_tokens': 200} green tokens: 37910
+generated 32 / 100
+generated 64 / 100
+generated 96 / 100
+generated 100 / 100
+wrote /DATA/scratch/s_shashi/Repos/llms/A2/out/q2/g0.25_d1.0_unique/generated_42.jsonl
+generation format ok: 100 rows, all 200 tokens, text matches decode
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+paraphrased 16 / 100
+paraphrased 32 / 100
+paraphrased 48 / 100
+paraphrased 64 / 100
+paraphrased 80 / 100
+paraphrased 96 / 100
+paraphrased 100 / 100
+wrote 4 perturbed files to /DATA/scratch/s_shashi/Repos/llms/A2/out/q2/g0.25_d1.0_unique
+wrote human.jsonl and human_short.jsonl with 100 texts
+wrote /DATA/scratch/s_shashi/Repos/llms/A2/out/q2/g0.25_d1.0_unique/scores_clean.jsonl (unique)
+wrote /DATA/scratch/s_shashi/Repos/llms/A2/out/q2/g0.25_d1.0_unique/scores_short.jsonl (unique)
+wrote /DATA/scratch/s_shashi/Repos/llms/A2/out/q2/g0.25_d1.0_unique/scores_substitution.jsonl (unique)
+wrote /DATA/scratch/s_shashi/Repos/llms/A2/out/q2/g0.25_d1.0_unique/scores_paraphrase.jsonl (unique)
+wrote /DATA/scratch/s_shashi/Repos/llms/A2/out/q2/g0.25_d1.0_unique/scores_human.jsonl (unique)
+wrote /DATA/scratch/s_shashi/Repos/llms/A2/out/q2/g0.25_d1.0_unique/scores_human_short.jsonl (unique)
+clean         TPR@1%FPR = 1.000  (tau 1.691, mean pos score 3.841)
+short         TPR@1%FPR = 0.450  (tau 2.316, mean pos score 2.117)
+substitution  TPR@1%FPR = 0.900  (tau 1.691, mean pos score 3.081)
+paraphrase    TPR@1%FPR = 0.220  (tau 1.691, mean pos score 0.911)
+S_det = 0.6425
+gamma 0.25 delta 1.00
+score         clean    short    subst     para    S_det
+plain         0.950    0.570    0.840    0.270    0.657
+unique        1.000    0.450    0.900    0.220    0.643
+weighted      0.990    0.320    0.960    0.370    0.660
+setup done: {'key': 15485863, 'gamma': 0.25, 'delta': 0.0, 'score': 'unique', 'n_real': 151643, 'size': 151936, 'new_tokens': 200} green tokens: 37910
+generated 32 / 100
+generated 64 / 100
+generated 96 / 100
+generated 100 / 100
+wrote /DATA/scratch/s_shashi/Repos/llms/A2/out/q2/plain/generated_42.jsonl
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00, 35.89it/s]
+/DATA/scratch/s_shashi/Repos/llms/A2/Q2/../out/q2/g0.25_d1.0_unique/generated_42.jsonl median PPL(M-oracle) = 24.650
+/DATA/scratch/s_shashi/Repos/llms/A2/Q2/../out/q2/plain/generated_42.jsonl median PPL(M-oracle) = 22.564
+Q = 1.0925 (first / second)
+setup done: {'key': 15485863, 'gamma': 0.25, 'delta': 1.5, 'score': 'unique', 'n_real': 151643, 'size': 151936, 'new_tokens': 200} green tokens: 37910
+generated 32 / 100
+generated 64 / 100
+generated 96 / 100
+generated 100 / 100
+wrote /DATA/scratch/s_shashi/Repos/llms/A2/out/q2/g0.25_d1.5_unique/generated_42.jsonl
+generation format ok: 100 rows, all 200 tokens, text matches decode
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+paraphrased 16 / 100
+paraphrased 32 / 100
+paraphrased 48 / 100
+paraphrased 64 / 100
+paraphrased 80 / 100
+paraphrased 96 / 100
+paraphrased 100 / 100
+wrote 4 perturbed files to /DATA/scratch/s_shashi/Repos/llms/A2/out/q2/g0.25_d1.5_unique
+wrote human.jsonl and human_short.jsonl with 100 texts
+wrote /DATA/scratch/s_shashi/Repos/llms/A2/out/q2/g0.25_d1.5_unique/scores_clean.jsonl (unique)
+wrote /DATA/scratch/s_shashi/Repos/llms/A2/out/q2/g0.25_d1.5_unique/scores_short.jsonl (unique)
+wrote /DATA/scratch/s_shashi/Repos/llms/A2/out/q2/g0.25_d1.5_unique/scores_substitution.jsonl (unique)
+wrote /DATA/scratch/s_shashi/Repos/llms/A2/out/q2/g0.25_d1.5_unique/scores_paraphrase.jsonl (unique)
+wrote /DATA/scratch/s_shashi/Repos/llms/A2/out/q2/g0.25_d1.5_unique/scores_human.jsonl (unique)
+wrote /DATA/scratch/s_shashi/Repos/llms/A2/out/q2/g0.25_d1.5_unique/scores_human_short.jsonl (unique)
+clean         TPR@1%FPR = 1.000  (tau 1.691, mean pos score 6.012)
+short         TPR@1%FPR = 0.800  (tau 2.316, mean pos score 3.409)
+substitution  TPR@1%FPR = 0.990  (tau 1.691, mean pos score 4.704)
+paraphrase    TPR@1%FPR = 0.450  (tau 1.691, mean pos score 1.619)
+S_det = 0.8100
+gamma 0.25 delta 1.50
+score         clean    short    subst     para    S_det
+plain         1.000    0.870    0.990    0.610    0.868
+unique        1.000    0.800    0.990    0.450    0.810
+weighted      1.000    0.750    1.000    0.590    0.835
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00, 31.76it/s]
+/DATA/scratch/s_shashi/Repos/llms/A2/Q2/../out/q2/g0.25_d1.5_unique/generated_42.jsonl median PPL(M-oracle) = 25.276
+/DATA/scratch/s_shashi/Repos/llms/A2/Q2/../out/q2/plain/generated_42.jsonl median PPL(M-oracle) = 22.564
+Q = 1.1202 (first / second)
+setup done: {'key': 15485863, 'gamma': 0.25, 'delta': 2.0, 'score': 'unique', 'n_real': 151643, 'size': 151936, 'new_tokens': 200} green tokens: 37910
+generated 32 / 100
+generated 64 / 100
+generated 96 / 100
+generated 100 / 100
+wrote /DATA/scratch/s_shashi/Repos/llms/A2/out/q2/g0.25_d2.0_unique/generated_42.jsonl
+generation format ok: 100 rows, all 200 tokens, text matches decode
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+paraphrased 16 / 100
+paraphrased 32 / 100
+paraphrased 48 / 100
+paraphrased 64 / 100
+paraphrased 80 / 100
+paraphrased 96 / 100
+paraphrased 100 / 100
+wrote 4 perturbed files to /DATA/scratch/s_shashi/Repos/llms/A2/out/q2/g0.25_d2.0_unique
+wrote human.jsonl and human_short.jsonl with 100 texts
+wrote /DATA/scratch/s_shashi/Repos/llms/A2/out/q2/g0.25_d2.0_unique/scores_clean.jsonl (unique)
+wrote /DATA/scratch/s_shashi/Repos/llms/A2/out/q2/g0.25_d2.0_unique/scores_short.jsonl (unique)
+wrote /DATA/scratch/s_shashi/Repos/llms/A2/out/q2/g0.25_d2.0_unique/scores_substitution.jsonl (unique)
+wrote /DATA/scratch/s_shashi/Repos/llms/A2/out/q2/g0.25_d2.0_unique/scores_paraphrase.jsonl (unique)
+wrote /DATA/scratch/s_shashi/Repos/llms/A2/out/q2/g0.25_d2.0_unique/scores_human.jsonl (unique)
+wrote /DATA/scratch/s_shashi/Repos/llms/A2/out/q2/g0.25_d2.0_unique/scores_human_short.jsonl (unique)
+clean         TPR@1%FPR = 1.000  (tau 1.691, mean pos score 8.191)
+short         TPR@1%FPR = 0.960  (tau 2.316, mean pos score 4.641)
+substitution  TPR@1%FPR = 1.000  (tau 1.691, mean pos score 6.450)
+paraphrase    TPR@1%FPR = 0.640  (tau 1.691, mean pos score 2.253)
+S_det = 0.9000
+gamma 0.25 delta 2.00
+score         clean    short    subst     para    S_det
+plain         1.000    0.990    1.000    0.770    0.940
+unique        1.000    0.960    1.000    0.640    0.900
+weighted      1.000    0.960    1.000    0.690    0.912
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00, 35.19it/s]
+/DATA/scratch/s_shashi/Repos/llms/A2/Q2/../out/q2/g0.25_d2.0_unique/generated_42.jsonl median PPL(M-oracle) = 32.186
+/DATA/scratch/s_shashi/Repos/llms/A2/Q2/../out/q2/plain/generated_42.jsonl median PPL(M-oracle) = 22.564
+Q = 1.4264 (first / second)
+setup done: {'key': 15485863, 'gamma': 0.25, 'delta': 2.5, 'score': 'unique', 'n_real': 151643, 'size': 151936, 'new_tokens': 200} green tokens: 37910
+generated 32 / 100
+generated 64 / 100
+generated 96 / 100
+generated 100 / 100
+wrote /DATA/scratch/s_shashi/Repos/llms/A2/out/q2/g0.25_d2.5_unique/generated_42.jsonl
+generation format ok: 100 rows, all 200 tokens, text matches decode
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+paraphrased 16 / 100
+paraphrased 32 / 100
+paraphrased 48 / 100
+paraphrased 64 / 100
+paraphrased 80 / 100
+paraphrased 96 / 100
+paraphrased 100 / 100
+wrote 4 perturbed files to /DATA/scratch/s_shashi/Repos/llms/A2/out/q2/g0.25_d2.5_unique
+wrote human.jsonl and human_short.jsonl with 100 texts
+wrote /DATA/scratch/s_shashi/Repos/llms/A2/out/q2/g0.25_d2.5_unique/scores_clean.jsonl (unique)
+wrote /DATA/scratch/s_shashi/Repos/llms/A2/out/q2/g0.25_d2.5_unique/scores_short.jsonl (unique)
+wrote /DATA/scratch/s_shashi/Repos/llms/A2/out/q2/g0.25_d2.5_unique/scores_substitution.jsonl (unique)
+wrote /DATA/scratch/s_shashi/Repos/llms/A2/out/q2/g0.25_d2.5_unique/scores_paraphrase.jsonl (unique)
+wrote /DATA/scratch/s_shashi/Repos/llms/A2/out/q2/g0.25_d2.5_unique/scores_human.jsonl (unique)
+wrote /DATA/scratch/s_shashi/Repos/llms/A2/out/q2/g0.25_d2.5_unique/scores_human_short.jsonl (unique)
+clean         TPR@1%FPR = 1.000  (tau 1.691, mean pos score 9.512)
+short         TPR@1%FPR = 0.970  (tau 2.316, mean pos score 5.491)
+substitution  TPR@1%FPR = 1.000  (tau 1.691, mean pos score 7.345)
+paraphrase    TPR@1%FPR = 0.600  (tau 1.691, mean pos score 2.231)
+S_det = 0.8925
+gamma 0.25 delta 2.50
+score         clean    short    subst     para    S_det
+plain         1.000    0.990    1.000    0.750    0.935
+unique        1.000    0.970    1.000    0.600    0.892
+weighted      1.000    0.970    1.000    0.710    0.920
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00, 35.80it/s]
+/DATA/scratch/s_shashi/Repos/llms/A2/Q2/../out/q2/g0.25_d2.5_unique/generated_42.jsonl median PPL(M-oracle) = 34.542
+/DATA/scratch/s_shashi/Repos/llms/A2/Q2/../out/q2/plain/generated_42.jsonl median PPL(M-oracle) = 22.564
+Q = 1.5308 (first / second)
+setup done: {'key': 15485863, 'gamma': 0.25, 'delta': 3.0, 'score': 'unique', 'n_real': 151643, 'size': 151936, 'new_tokens': 200} green tokens: 37910
+generated 32 / 100
+generated 64 / 100
+generated 96 / 100
+generated 100 / 100
+wrote /DATA/scratch/s_shashi/Repos/llms/A2/out/q2/g0.25_d3.0_unique/generated_42.jsonl
+generation format ok: 100 rows, all 200 tokens, text matches decode
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+paraphrased 16 / 100
+paraphrased 32 / 100
+paraphrased 48 / 100
+paraphrased 64 / 100
+paraphrased 80 / 100
+paraphrased 96 / 100
+paraphrased 100 / 100
+wrote 4 perturbed files to /DATA/scratch/s_shashi/Repos/llms/A2/out/q2/g0.25_d3.0_unique
+wrote human.jsonl and human_short.jsonl with 100 texts
+wrote /DATA/scratch/s_shashi/Repos/llms/A2/out/q2/g0.25_d3.0_unique/scores_clean.jsonl (unique)
+wrote /DATA/scratch/s_shashi/Repos/llms/A2/out/q2/g0.25_d3.0_unique/scores_short.jsonl (unique)
+wrote /DATA/scratch/s_shashi/Repos/llms/A2/out/q2/g0.25_d3.0_unique/scores_substitution.jsonl (unique)
+wrote /DATA/scratch/s_shashi/Repos/llms/A2/out/q2/g0.25_d3.0_unique/scores_paraphrase.jsonl (unique)
+wrote /DATA/scratch/s_shashi/Repos/llms/A2/out/q2/g0.25_d3.0_unique/scores_human.jsonl (unique)
+wrote /DATA/scratch/s_shashi/Repos/llms/A2/out/q2/g0.25_d3.0_unique/scores_human_short.jsonl (unique)
+clean         TPR@1%FPR = 1.000  (tau 1.691, mean pos score 10.970)
+short         TPR@1%FPR = 1.000  (tau 2.316, mean pos score 6.350)
+substitution  TPR@1%FPR = 1.000  (tau 1.691, mean pos score 8.439)
+paraphrase    TPR@1%FPR = 0.750  (tau 1.691, mean pos score 3.257)
+S_det = 0.9375
+gamma 0.25 delta 3.00
+score         clean    short    subst     para    S_det
+plain         1.000    1.000    1.000    0.820    0.955
+unique        1.000    1.000    1.000    0.750    0.938
+weighted      1.000    1.000    1.000    0.780    0.945
+mz            1.000    1.000    1.000    0.850    0.963
+oz            1.000    1.000    1.000    0.800    0.950
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00, 35.00it/s]
+/DATA/scratch/s_shashi/Repos/llms/A2/Q2/../out/q2/g0.25_d3.0_unique/generated_42.jsonl median PPL(M-oracle) = 34.463
+/DATA/scratch/s_shashi/Repos/llms/A2/Q2/../out/q2/plain/generated_42.jsonl median PPL(M-oracle) = 22.564
+Q = 1.5273 (first / second)
+setup done: {'key': 15485863, 'gamma': 0.5, 'delta': 2.0, 'score': 'unique', 'n_real': 151643, 'size': 151936, 'new_tokens': 200} green tokens: 75821
+generated 32 / 100
+generated 64 / 100
+generated 96 / 100
+generated 100 / 100
+wrote /DATA/scratch/s_shashi/Repos/llms/A2/out/q2/g0.5_d2.0_unique/generated_42.jsonl
+generation format ok: 100 rows, all 200 tokens, text matches decode
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+paraphrased 16 / 100
+paraphrased 32 / 100
+paraphrased 48 / 100
+paraphrased 64 / 100
+paraphrased 80 / 100
+paraphrased 96 / 100
+paraphrased 100 / 100
+wrote 4 perturbed files to /DATA/scratch/s_shashi/Repos/llms/A2/out/q2/g0.5_d2.0_unique
+wrote human.jsonl and human_short.jsonl with 100 texts
+wrote /DATA/scratch/s_shashi/Repos/llms/A2/out/q2/g0.5_d2.0_unique/scores_clean.jsonl (unique)
+wrote /DATA/scratch/s_shashi/Repos/llms/A2/out/q2/g0.5_d2.0_unique/scores_short.jsonl (unique)
+wrote /DATA/scratch/s_shashi/Repos/llms/A2/out/q2/g0.5_d2.0_unique/scores_substitution.jsonl (unique)
+wrote /DATA/scratch/s_shashi/Repos/llms/A2/out/q2/g0.5_d2.0_unique/scores_paraphrase.jsonl (unique)
+wrote /DATA/scratch/s_shashi/Repos/llms/A2/out/q2/g0.5_d2.0_unique/scores_human.jsonl (unique)
+wrote /DATA/scratch/s_shashi/Repos/llms/A2/out/q2/g0.5_d2.0_unique/scores_human_short.jsonl (unique)
+clean         TPR@1%FPR = 1.000  (tau 1.509, mean pos score 6.537)
+short         TPR@1%FPR = 1.000  (tau 1.761, mean pos score 3.580)
+substitution  TPR@1%FPR = 1.000  (tau 1.509, mean pos score 5.190)
+paraphrase    TPR@1%FPR = 0.450  (tau 1.509, mean pos score 1.401)
+S_det = 0.8625
+gamma 0.50 delta 2.00
+score         clean    short    subst     para    S_det
+plain         1.000    0.970    1.000    0.630    0.900
+unique        1.000    1.000    1.000    0.450    0.863
+weighted      1.000    1.000    1.000    0.530    0.883
+mz            1.000    1.000    1.000    0.700    0.925
+oz            1.000    0.990    1.000    0.700    0.923
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00, 36.19it/s]
+/DATA/scratch/s_shashi/Repos/llms/A2/Q2/../out/q2/g0.5_d2.0_unique/generated_42.jsonl median PPL(M-oracle) = 35.286
+/DATA/scratch/s_shashi/Repos/llms/A2/Q2/../out/q2/plain/generated_42.jsonl median PPL(M-oracle) = 22.564
+Q = 1.5638 (first / second)
+exit code 0

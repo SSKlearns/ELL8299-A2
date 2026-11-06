@@ -1,0 +1,3 @@
+/DATA/scratch/s_shashi/Repos/llms/A2/Q2/../out/q2_multi/base/s44/generated_44.jsonl median PPL(M-oracle) = 29.084
+/DATA/scratch/s_shashi/Repos/llms/A2/Q2/../out/q2_multi/plain/s44/generated_44.jsonl median PPL(M-oracle) = 24.192
+Q = 1.2023 (first / second)

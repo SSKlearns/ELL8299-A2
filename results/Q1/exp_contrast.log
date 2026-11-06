@@ -1,0 +1,17 @@
+lr       locoAUC 0.9953 (min 0.972) devAUC 1.0000 (min 1.000) | thr 0.16 | LOCO fixed 0.8152 median 0.8385 | dev fixed 0.8400 median 0.8867 | LOCO median wrong (amb->dis, dis->amb) (14, 14) | dev fixed wrong (16, 10) | dev len corr -0.73
+         loco auc per cat {np.str_('Age'): 1.0, np.str_('Gender_identity'): 1.0, np.str_('Nationality'): 0.972, np.str_('Physical_appearance'): 1.0, np.str_('Race_ethnicity'): 1.0, np.str_('SES'): 1.0}
+lin_1    locoAUC 0.9953 (min 0.972) devAUC 1.0000 (min 1.000) | thr 0.17 | LOCO fixed 0.8168 median 0.8385 | dev fixed 0.8400 median 0.8867 | LOCO median wrong (amb->dis, dis->amb) (14, 14) | dev fixed wrong (16, 10) | dev len corr -0.72
+         loco auc per cat {np.str_('Age'): 1.0, np.str_('Gender_identity'): 1.0, np.str_('Nationality'): 0.972, np.str_('Physical_appearance'): 1.0, np.str_('Race_ethnicity'): 1.0, np.str_('SES'): 1.0}
+lin_5    locoAUC 0.9953 (min 0.972) devAUC 1.0000 (min 1.000) | thr 0.17 | LOCO fixed 0.8168 median 0.8385 | dev fixed 0.8400 median 0.8867 | LOCO median wrong (amb->dis, dis->amb) (14, 14) | dev fixed wrong (16, 10) | dev len corr -0.72
+         loco auc per cat {np.str_('Age'): 1.0, np.str_('Gender_identity'): 1.0, np.str_('Nationality'): 0.972, np.str_('Physical_appearance'): 1.0, np.str_('Race_ethnicity'): 1.0, np.str_('SES'): 1.0}
+mlp_0    locoAUC 0.9948 (min 0.969) devAUC 1.0000 (min 1.000) | thr 0.14 | LOCO fixed 0.8172 median 0.8361 | dev fixed 0.8567 median 0.8867 | LOCO median wrong (amb->dis, dis->amb) (18, 18) | dev fixed wrong (16, 0) | dev len corr -0.71
+         loco auc per cat {np.str_('Age'): 1.0, np.str_('Gender_identity'): 1.0, np.str_('Nationality'): 0.969, np.str_('Physical_appearance'): 1.0, np.str_('Race_ethnicity'): 1.0, np.str_('SES'): 1.0}
+all_0.5  locoAUC 0.9947 (min 0.969) devAUC 1.0000 (min 1.000) | thr 0.12 | LOCO fixed 0.8168 median 0.8337 | dev fixed 0.8424 median 0.8867 | LOCO median wrong (amb->dis, dis->amb) (22, 22) | dev fixed wrong (16, 6) | dev len corr -0.71
+         loco auc per cat {np.str_('Age'): 1.0, np.str_('Gender_identity'): 1.0, np.str_('Nationality'): 0.969, np.str_('Physical_appearance'): 1.0, np.str_('Race_ethnicity'): 1.0, np.str_('SES'): 1.0}
+all_2    locoAUC 0.9947 (min 0.969) devAUC 1.0000 (min 1.000) | thr 0.15 | LOCO fixed 0.8173 median 0.8335 | dev fixed 0.8400 median 0.8867 | LOCO median wrong (amb->dis, dis->amb) (23, 23) | dev fixed wrong (16, 10) | dev len corr -0.72
+         loco auc per cat {np.str_('Age'): 1.0, np.str_('Gender_identity'): 1.0, np.str_('Nationality'): 0.969, np.str_('Physical_appearance'): 1.0, np.str_('Race_ethnicity'): 1.0, np.str_('SES'): 1.0}
+tpl_0.5  locoAUC 0.9947 (min 0.969) devAUC 1.0000 (min 1.000) | thr 0.11 | LOCO fixed 0.8192 median 0.8355 | dev fixed 0.8566 median 0.8867 | LOCO median wrong (amb->dis, dis->amb) (19, 19) | dev fixed wrong (16, 1) | dev len corr -0.71
+         loco auc per cat {np.str_('Age'): 1.0, np.str_('Gender_identity'): 1.0, np.str_('Nationality'): 0.969, np.str_('Physical_appearance'): 1.0, np.str_('Race_ethnicity'): 1.0, np.str_('SES'): 1.0}
+tpl_2    locoAUC 0.9947 (min 0.969) devAUC 1.0000 (min 1.000) | thr 0.12 | LOCO fixed 0.8187 median 0.8350 | dev fixed 0.8497 median 0.8867 | LOCO median wrong (amb->dis, dis->amb) (23, 23) | dev fixed wrong (16, 3) | dev len corr -0.71
+         loco auc per cat {np.str_('Age'): 1.0, np.str_('Gender_identity'): 1.0, np.str_('Nationality'): 0.969, np.str_('Physical_appearance'): 1.0, np.str_('Race_ethnicity'): 1.0, np.str_('SES'): 1.0}
+perfect router: LOCO 0.8598 dev 0.8867

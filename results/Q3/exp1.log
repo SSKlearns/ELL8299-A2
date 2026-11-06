@@ -1,0 +1,33 @@
+=== accuracy by sample agreement (share of 8 samples matching greedy)
+  id   agree in [0.00, 0.01): n 1015 acc 0.023 mean conf 0.032
+  id   agree in [0.01, 0.50): n  839 acc 0.104 mean conf 0.084
+  id   agree in [0.50, 0.75): n  295 acc 0.234 mean conf 0.223
+  id   agree in [0.75, 0.99): n  230 acc 0.361 mean conf 0.394
+  id   agree in [0.99, 1.01): n  121 acc 0.545 mean conf 0.566
+  ood  agree in [0.00, 0.01): n  110 acc 0.000 mean conf 0.013
+  ood  agree in [0.01, 0.50): n   51 acc 0.059 mean conf 0.075
+  ood  agree in [0.50, 0.75): n   14 acc 0.429 mean conf 0.215
+  ood  agree in [0.75, 0.99): n   19 acc 0.421 mean conf 0.385
+  ood  agree in [0.99, 1.01): n    6 acc 0.333 mean conf 0.574
+
+=== top-n accuracy by OOF confidence (oracle view of selective)
+  train n 2000 acc 0.133 | 0.01:0.65(c0.76) 0.02:0.65(c0.67) 0.03:0.68(c0.63) 0.05:0.61(c0.54) 0.08:0.53(c0.43) 0.10:0.48(c0.39) 0.15:0.43(c0.30) | oracle max coverage at risk<=0.2: 0.001
+  dev   n  500 acc 0.126 | 0.01:1.00(c0.71) 0.02:0.70(c0.69) 0.03:0.80(c0.65) 0.05:0.68(c0.55) 0.08:0.57(c0.42) 0.10:0.56(c0.36) 0.15:0.48(c0.28) | oracle max coverage at risk<=0.2: 0.030
+  ood   n  200 acc 0.095 | 0.01:1.00(c0.67) 0.02:0.75(c0.58) 0.03:0.67(c0.55) 0.05:0.60(c0.52) 0.08:0.50(c0.38) 0.10:0.40(c0.31) 0.15:0.40(c0.22) | oracle max coverage at risk<=0.2: 0.025
+
+=== selective with a fixed confidence threshold chosen on OOF (pooled id = train+dev, ood separately)
+  t 0.40 | train sel 0.000 cov 0.092 risk 0.511 | dev sel 0.000 cov 0.090 risk 0.422 | ood sel 0.000 cov 0.070 risk 0.429
+  t 0.45 | train sel 0.000 cov 0.075 risk 0.464 | dev sel 0.000 cov 0.070 risk 0.371 | ood sel 0.000 cov 0.065 risk 0.385
+  t 0.50 | train sel 0.000 cov 0.060 risk 0.421 | dev sel 0.000 cov 0.060 risk 0.400 | ood sel 0.000 cov 0.050 risk 0.400
+  t 0.55 | train sel 0.000 cov 0.046 risk 0.376 | dev sel 0.000 cov 0.052 risk 0.346 | ood sel 0.025 cov 0.025 risk 0.200
+  t 0.60 | train sel 0.000 cov 0.036 risk 0.347 | dev sel 0.014 cov 0.038 risk 0.263 | ood sel 0.000 cov 0.015 risk 0.333
+  t 0.65 | train sel 0.000 cov 0.023 risk 0.326 | dev sel 0.030 cov 0.030 risk 0.200 | ood sel 0.010 cov 0.010 risk 0.000
+  t 0.70 | train sel 0.000 cov 0.015 risk 0.333 | dev sel 0.016 cov 0.016 risk 0.125 | ood sel 0.005 cov 0.005 risk 0.000
+=== stacking several probes (OOF set score uses predicted-risk abstention, margin 0)
+  no probe                     train AUROC 0.8297 ECE 0.0143 set 0.6051 | dev AUROC 0.8397 ECE 0.0212 set 0.6062 | ood AUROC 0.8729 ECE 0.0274 set 0.6152
+  hp14 (current)               train AUROC 0.8493 ECE 0.0190 set 0.6101 | dev AUROC 0.8468 ECE 0.0224 set 0.6108 | ood AUROC 0.8994 ECE 0.0281 set 0.6237
+  hp14+ha14                    train AUROC 0.8634 ECE 0.0179 set 0.6168 | dev AUROC 0.8673 ECE 0.0171 set 0.6194 | ood AUROC 0.8793 ECE 0.0310 set 0.6178
+  hp14+hp20                    train AUROC 0.8579 ECE 0.0177 set 0.6142 | dev AUROC 0.8415 ECE 0.0168 set 0.6096 | ood AUROC 0.9000 ECE 0.0289 set 0.6253
+  hp14+ha14+hp20+ha20          train AUROC 0.8657 ECE 0.0126 set 0.6183 | dev AUROC 0.8579 ECE 0.0266 set 0.6131 | ood AUROC 0.8895 ECE 0.0488 set 0.6136
+  hp14+ha14+hp20+ha20+hp26+ha26 train AUROC 0.8671 ECE 0.0162 set 0.6213 | dev AUROC 0.8671 ECE 0.0354 set 0.6159 | ood AUROC 0.8866 ECE 0.0384 set 0.6160
+  hp14+ha14 inter              train AUROC 0.8666 ECE 0.0103 set 0.6198 | dev AUROC 0.8739 ECE 0.0231 set 0.6196 | ood AUROC 0.8886 ECE 0.0428 set 0.6186

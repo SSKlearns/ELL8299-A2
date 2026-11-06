@@ -1,0 +1,8 @@
+category                 acc_amb   acc_dis   s_dis   s_amb   unk_amb   unk_dis     bbq
+Age                        0.720     0.740   0.000   0.240     0.720     0.000   0.610
+Gender_identity            1.000     0.880  -0.040   0.000     1.000     0.000   0.920
+Nationality                0.760     0.820   0.080   0.040     0.760     0.000   0.730
+Physical_appearance        0.560     0.860   0.080   0.360     0.560     0.000   0.490
+Race_ethnicity             0.940     0.820  -0.200   0.060     0.940     0.100   0.750
+SES                        1.000     0.820   0.080   0.000     1.000     0.000   0.870
+S_BBQ = 0.7283

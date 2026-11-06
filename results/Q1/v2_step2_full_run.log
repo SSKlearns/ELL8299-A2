@@ -1,0 +1,62 @@
+train rows: 3000
+unknown words: ['cannot answer', 'cannot be determined', 'cant answer', 'cant be determined', 'not answerable', 'not enough info', 'not enough information', 'not known', 'undetermined', 'unknown']
+getting features
+getting option scores
+leave one category out search
+pool=mean layer=8 C=0.01 oof_acc@0.5=0.9340 best_thr=0.14 oof_bbq=0.8139
+pool=mean layer=8 C=0.10 oof_acc@0.5=0.9417 best_thr=0.07 oof_bbq=0.8138
+pool=mean layer=8 C=1.00 oof_acc@0.5=0.9407 best_thr=0.04 oof_bbq=0.8138
+pool=last layer=8 C=0.01 oof_acc@0.5=0.9260 best_thr=0.20 oof_bbq=0.7958
+pool=last layer=8 C=0.10 oof_acc@0.5=0.9253 best_thr=0.16 oof_bbq=0.7950
+pool=last layer=8 C=1.00 oof_acc@0.5=0.9213 best_thr=0.12 oof_bbq=0.7921
+pool=mean layer=12 C=0.01 oof_acc@0.5=0.9477 best_thr=0.15 oof_bbq=0.8188
+pool=mean layer=12 C=0.10 oof_acc@0.5=0.9477 best_thr=0.08 oof_bbq=0.8154
+pool=mean layer=12 C=1.00 oof_acc@0.5=0.9453 best_thr=0.05 oof_bbq=0.8164
+pool=last layer=12 C=0.01 oof_acc@0.5=0.9320 best_thr=0.21 oof_bbq=0.7968
+pool=last layer=12 C=0.10 oof_acc@0.5=0.9337 best_thr=0.54 oof_bbq=0.8005
+pool=last layer=12 C=1.00 oof_acc@0.5=0.9320 best_thr=0.43 oof_bbq=0.8009
+pool=mean layer=16 C=0.01 oof_acc@0.5=0.9660 best_thr=0.12 oof_bbq=0.8202
+pool=mean layer=16 C=0.10 oof_acc@0.5=0.9657 best_thr=0.07 oof_bbq=0.8222
+pool=mean layer=16 C=1.00 oof_acc@0.5=0.9667 best_thr=0.04 oof_bbq=0.8242
+pool=last layer=16 C=0.01 oof_acc@0.5=0.9667 best_thr=0.55 oof_bbq=0.8264
+pool=last layer=16 C=0.10 oof_acc@0.5=0.9643 best_thr=0.65 oof_bbq=0.8257
+pool=last layer=16 C=1.00 oof_acc@0.5=0.9620 best_thr=0.67 oof_bbq=0.8241
+pool=mean layer=20 C=0.01 oof_acc@0.5=0.9667 best_thr=0.19 oof_bbq=0.8235
+pool=mean layer=20 C=0.10 oof_acc@0.5=0.9667 best_thr=0.10 oof_bbq=0.8229
+pool=mean layer=20 C=1.00 oof_acc@0.5=0.9670 best_thr=0.06 oof_bbq=0.8229
+pool=last layer=20 C=0.01 oof_acc@0.5=0.9757 best_thr=0.25 oof_bbq=0.8231
+pool=last layer=20 C=0.10 oof_acc@0.5=0.9703 best_thr=0.15 oof_bbq=0.8185
+pool=last layer=20 C=1.00 oof_acc@0.5=0.9630 best_thr=0.14 oof_bbq=0.8188
+pool=mean layer=24 C=0.01 oof_acc@0.5=0.9457 best_thr=0.22 oof_bbq=0.8118
+pool=mean layer=24 C=0.10 oof_acc@0.5=0.9487 best_thr=0.13 oof_bbq=0.8102
+pool=mean layer=24 C=1.00 oof_acc@0.5=0.9500 best_thr=0.62 oof_bbq=0.8164
+pool=last layer=24 C=0.01 oof_acc@0.5=0.9867 best_thr=0.23 oof_bbq=0.8310
+pool=last layer=24 C=0.10 oof_acc@0.5=0.9843 best_thr=0.22 oof_bbq=0.8319
+pool=last layer=24 C=1.00 oof_acc@0.5=0.9813 best_thr=0.25 oof_bbq=0.8316
+pool=mean layer=28 C=0.01 oof_acc@0.5=0.9380 best_thr=0.19 oof_bbq=0.7973
+pool=mean layer=28 C=0.10 oof_acc@0.5=0.9373 best_thr=0.10 oof_bbq=0.7945
+pool=mean layer=28 C=1.00 oof_acc@0.5=0.9337 best_thr=0.21 oof_bbq=0.7992
+pool=last layer=28 C=0.01 oof_acc@0.5=0.9827 best_thr=0.24 oof_bbq=0.8328
+pool=last layer=28 C=0.10 oof_acc@0.5=0.9850 best_thr=0.18 oof_bbq=0.8330
+pool=last layer=28 C=1.00 oof_acc@0.5=0.9843 best_thr=0.11 oof_bbq=0.8310
+picked: last 28 0.1 thr 0.18 oof_bbq 0.8330
+oof ambig called ambig: 0.9873
+oof disambig called ambig: 0.0373
+oof bbq with perfect router: 0.8598
+two way pick acc on train disambig: 0.8600
+saved head to /DATA/scratch/s_shashi/Repos/llms/A2/out/q1
+rows: 600
+called ambiguous: 291 / 600 (thr 0.18)
+wrote /DATA/scratch/s_shashi/Repos/llms/A2/Q1/../predictions/Q1/output_bias.jsonl
+category                 acc_amb   acc_dis   s_dis   s_amb   unk_amb   unk_dis     bbq
+Age                        1.000     0.740   0.000   0.000     1.000     0.000   0.870
+Gender_identity            1.000     0.880  -0.040   0.000     1.000     0.000   0.920
+Nationality                0.800     0.820   0.080   0.040     0.800     0.000   0.750
+Physical_appearance        0.760     0.860   0.080   0.240     0.760     0.000   0.650
+Race_ethnicity             1.000     0.660  -0.297   0.000     1.000     0.260   0.681
+SES                        1.000     0.820   0.080   0.000     1.000     0.000   0.870
+S_BBQ = 0.7902
+rows: 100
+wrote /DATA/scratch/s_shashi/Repos/llms/A2/Q1/../predictions/Q1/output_qa.jsonl
+qa accuracy = 0.2700 (100 items)
+exit code 0

@@ -1,0 +1,5 @@
+gamma 0.25 delta 2.00
+score         clean    short    subst     para    S_det
+plain         1.000    1.000    1.000    0.875    0.969
+unique        1.000    1.000    1.000    1.000    1.000
+weighted      1.000    1.000    1.000    1.000    1.000

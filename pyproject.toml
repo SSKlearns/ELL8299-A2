@@ -1,0 +1,31 @@
+[project]
+name = "a2"
+version = "0.1.0"
+description = "COL8383 A2: Debias, Watermark, Abstain"
+readme = "README.md"
+requires-python = ">=3.10,<3.11"
+dependencies = [
+    "torch==2.6.0",
+    "transformers>=4.51,<5",
+    "peft",
+    "trl>=0.20",
+    "accelerate",
+    "datasets>=3.0",
+    "bitsandbytes",
+    "numpy",
+    "scipy",
+    "scikit-learn",
+    "pandas",
+    "tqdm",
+]
+
+[tool.uv]
+package = false
+
+[tool.uv.sources]
+torch = { index = "pytorch-cu124" }
+
+[[tool.uv.index]]
+name = "pytorch-cu124"
+url = "https://download.pytorch.org/whl/cu124"
+explicit = true

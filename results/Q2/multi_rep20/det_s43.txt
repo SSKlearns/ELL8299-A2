@@ -1,0 +1,9 @@
+human        n=100 mean 0.034 sd 0.928 max 2.041
+human_short  n=100 mean 0.161 sd 0.929 max 2.788
+clean         TPR emp 1.000 (tau 1.88) | TPR gauss 1.000 (tau 2.19) | pos mean 11.56 median 11.67
+short         TPR emp 0.990 (tau 2.07) | TPR gauss 0.990 (tau 2.32) | pos mean 5.44 median 5.54
+substitution  TPR emp 1.000 (tau 1.88) | TPR gauss 1.000 (tau 2.19) | pos mean 8.12 median 8.14
+paraphrase    TPR emp 0.780 (tau 1.88) | TPR gauss 0.730 (tau 2.19) | pos mean 3.44 median 3.38
+parasample    TPR emp 0.750 (tau 1.88) | TPR gauss 0.700 (tau 2.19) | pos mean 3.11 median 2.95
+S_det with paraphrase emp 0.9425 | gauss 0.9300
+S_det with parasample emp 0.9350 | gauss 0.9225

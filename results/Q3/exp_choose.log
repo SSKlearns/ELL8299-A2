@@ -1,0 +1,7 @@
+seed 0 picked retrieved answer on 1240 questions
+seed 1 picked retrieved answer on 1273 questions
+seed 2 picked retrieved answer on 1282 questions
+seed 3 picked retrieved answer on 1261 questions
+seed 4 picked retrieved answer on 1263 questions
+fixed   acc id 0.1320 dev 0.1300 ood 0.0950 | AUROC id 0.8835 dev 0.8964 ood 0.8922 | ECE id 0.0099 ood 0.0320 | set w/o sel id 0.6245 ood 0.6201 mean 0.6223 | EV sel train 0.0068 dev 0.0408 ood 0.0050
+choose  acc id 0.1646 dev 0.1604 ood 0.1220 | AUROC id 0.8459 dev 0.8706 ood 0.9013 | ECE id 0.0108 ood 0.0390 | set w/o sel id 0.6117 ood 0.6208 mean 0.6162 | EV sel train 0.0071 dev 0.0416 ood 0.0070

@@ -1,0 +1,144 @@
+/DATA/scratch/s_shashi/Repos/llms/A2/Q3/exp_err.py:127: RuntimeWarning: Mean of empty slice.
+  print("   quartile %d n %3d acc %.3f mean conf %.3f auroc %.3f" % (q, m.sum(), y[m].mean(), conf[m].mean(), roc_auc_score(y[m], conf[m]) if 0 < y[m].sum() < m.sum() else float("nan")))
+/DATA/scratch/s_shashi/Repos/llms/A2/.venv/lib/python3.10/site-packages/numpy/_core/_methods.py:145: RuntimeWarning: invalid value encountered in scalar divide
+  ret = ret.dtype.type(ret / rcount)
+train+dev (id)  n 2500 acc 0.131 AUROC 0.8489 ECE 0.0146 set 0.6120
+dev             n  500 acc 0.126 AUROC 0.8468 ECE 0.0224 set 0.6108
+dev_ood         n  200 acc 0.095 AUROC 0.8994 ECE 0.0281 set 0.6237
+
+normalisation that turns punctuation into spaces: labels changed 3 / 2700 (0->1 3, 1->0 0)
+
+=== error types among wrong answers
+id wrong 2172
+   no overlap                                    1911  88.0%
+   shares a word with gold                        181  8.3%
+   answer is part of a gold answer (too short)     78  3.6%
+   empty                                            2  0.1%
+ood wrong 181
+   no overlap                                     168  92.8%
+   shares a word with gold                          7  3.9%
+   answer is part of a gold answer (too short)      6  3.3%
+
+=== accuracy by confidence rank (id = train+dev, OOF)
+   id   top    1% (n   25): accuracy 0.720  mean conf 0.808
+   id   top    2% (n   50): accuracy 0.680  mean conf 0.755
+   id   top    5% (n  125): accuracy 0.616  mean conf 0.665
+   id   top   10% (n  250): accuracy 0.500  mean conf 0.559
+   id   top   20% (n  500): accuracy 0.392  mean conf 0.427
+   ood  top    1% (n    2): accuracy 1.000  mean conf 0.708
+   ood  top    2% (n    4): accuracy 0.750  mean conf 0.659
+   ood  top    5% (n   10): accuracy 0.600  mean conf 0.589
+   ood  top   10% (n   20): accuracy 0.400  mean conf 0.492
+   ood  top   20% (n   40): accuracy 0.350  mean conf 0.359
+
+=== accuracy by agreement of 8 samples with greedy
+   id   agree [0.00, 0.25): n 1425 acc 0.032 mean conf 0.040
+   id   agree [0.25, 0.50): n  429 acc 0.149 mean conf 0.109
+   id   agree [0.50, 0.75): n  295 acc 0.234 mean conf 0.223
+   id   agree [0.75, 1.01): n  351 acc 0.425 mean conf 0.453
+   ood  agree [0.00, 0.25): n  133 acc 0.000 mean conf 0.018
+   ood  agree [0.25, 0.50): n   28 acc 0.107 mean conf 0.101
+   ood  agree [0.50, 0.75): n   14 acc 0.429 mean conf 0.215
+   ood  agree [0.75, 1.01): n   25 acc 0.400 mean conf 0.430
+
+=== OOD by question template and popularity
+   Who was X?                                    n  92 acc 0.000 mean conf 0.009
+   What is X?                                    n  29 acc 0.276 mean conf 0.211
+   Who is X?                                     n  22 acc 0.000 mean conf 0.043
+   What genre is X?                              n  22 acc 0.091 mean conf 0.158
+   In what city was X?                           n  13 acc 0.000 mean conf 0.068
+   In what country is X?                         n  12 acc 0.333 mean conf 0.322
+   What sport does Mustafa Keçeli play?          n   1 acc 1.000 mean conf 0.202
+   What sport does 1973 Virginia Slims of X?     n   1 acc 0.000 mean conf 0.549
+   What sport does Alex Crombie play?            n   1 acc 0.000 mean conf 0.244
+   What sport does Barrie Aitchison play?        n   1 acc 0.000 mean conf 0.351
+   What sport does Ceyda Aktaş play?             n   1 acc 0.000 mean conf 0.096
+   What sport does All-Ireland Senior Club Camog n   1 acc 1.000 mean conf 0.494
+   What sport does Alain X?                      n   1 acc 0.000 mean conf 0.086
+   What sport does János Farkas play?            n   1 acc 1.000 mean conf 0.088
+   What sport does Giorgio Venturin X?           n   1 acc 1.000 mean conf 0.266
+   What sport does Boston United F.C. play?      n   1 acc 1.000 mean conf 0.544
+   quartile 1 n   0 acc nan mean conf nan auroc nan
+   quartile 2 n   0 acc nan mean conf nan auroc nan
+   quartile 3 n   0 acc nan mean conf nan auroc nan
+   quartile 4 n   0 acc nan mean conf nan auroc nan
+
+=== most confident wrong answers (id)
+   0.87 ag 1.00 | is aluminium a ferrous or non ferrous metal             | ans non ferrous                    | gold ['non-ferrous']
+   0.83 ag 1.00 | when did united states enter world war i                | ans 1917                           | gold ['April 1917']
+   0.83 ag 1.00 | what was the date of the signing of the declaration of  | ans July 4, 1776                   | gold ['August\xa02,\xa01776']
+   0.82 ag 1.00 | what is the most fundamental unit of life according to  | ans cell                           | gold ['cells']
+   0.81 ag 1.00 | who developed the central processing unit (cpu)         | ans Intel                          | gold ['John von Neumann']
+   0.80 ag 0.88 | when did canada gain independence from great britain    | ans 1867                           | gold ['April 17, 1982']
+   0.76 ag 1.00 | what was the religion in persia before islam            | ans Zoroastrianism                 | gold ['the Zoroastrian religion', 'Zoroastrian']
+   0.75 ag 1.00 | a good that can be used in place of another good        | ans substitute                     | gold ['A substitute good', 'substitute good']
+   0.71 ag 1.00 | who came out first batman or spider man                 | ans Spider-Man                     | gold ['Batman', 'Superman']
+   0.71 ag 1.00 | an object that moves around an external axis is said to | ans rotating                       | gold ['revolution or orbital revolution', 'orbit']
+   0.70 ag 1.00 | when was the statue of liberty in france built          | ans 1886                           | gold ['Paris']
+   0.69 ag 1.00 | when was united nations convention on the rights of the | ans 1989                           | gold ['20 November 1989']
+   0.69 ag 0.88 | who rebuilt the temple after the babylonian captivity   | ans Zerubbabel                     | gold ['Herod']
+   0.69 ag 0.88 | when was the first driver's license required            | ans 1903                           | gold ['1888', '1 January 1904']
+   0.68 ag 1.00 | when was penicillin first introduced to the public      | ans 1928                           | gold ['After World War II', '1942']
+   0.67 ag 1.00 | when was the land rover defender first built            | ans 1948                           | gold ['1991', '1983', 'in the 1980s']
+   0.67 ag 1.00 | when was the last time michigan won the championship    | ans 2014                           | gold ['1989']
+   0.66 ag 0.88 | where are the 10 plagues found in the bible             | ans Egypt                          | gold ['Exodus', 'Book of Exodus']
+   0.65 ag 0.62 | what are the names of the hunger games                  | ans Katniss Everdeen               | gold ['The Hunger Games']
+   0.64 ag 1.00 | who declared war on the united states four days after p | ans Japan                          | gold ['Fascist Italy', 'Nazi Germany']
+   0.64 ag 1.00 | who was in charge of the revolutionary war              | ans George Washington              | gold ['General George Washington', 'the king']
+   0.64 ag 0.88 | when did the first movie of harry potter come out       | ans 1997                           | gold ['16 November 2001', '2001']
+   0.64 ag 1.00 | when was the first episode of scooby doo                | ans 1969                           | gold ['September\xa013,\xa01969']
+   0.62 ag 1.00 | what part of brain is responsible for complex thinking  | ans cerebrum                       | gold ['the frontal lobe']
+   0.62 ag 1.00 | when did avatar the last airbender first air            | ans 2005                           | gold ['February 2005', 'February 21, 2005', 'February\xa021,\xa02005']
+
+=== least confident right answers (id)
+   0.008 ag 0.00 | what is katie running from in safe haven                | ans her abusive husband            | gold ['her abusive husband']
+   0.008 ag 0.00 | i want to be with you everywhere song                   | ans i want to be with you everywhe | gold ['Everywhere']
+   0.014 ag 0.00 | when was the last time an american won the new york mar | ans 2017                           | gold ['2009', '2017']
+   0.014 ag 0.00 | what is the longest pier in the uk                      | ans Southend Pier                  | gold ['Southend Pier']
+   0.016 ag 0.25 | who says that which we call a rose                      | ans William Shakespeare            | gold ['Juliet', 'William Shakespeare']
+   0.017 ag 0.00 | what is one of the main goal of the democratic party    | ans Economic equality              | gold ['social and economic equality', 'economic equality']
+   0.017 ag 0.00 | when is dancing on ice on the tv                        | ans February 14, 2019              | gold ['2019']
+   0.018 ag 0.00 | who played ice queen in chronicles of narnia            | ans Tilda Swinton                  | gold ['Tilda Swinton', 'Laura Brent']
+   0.020 ag 0.00 | where do characters live in this is us                  | ans New York City                  | gold ['New Jersey', 'Pittsburgh', 'New York City']
+   0.022 ag 0.12 | what was the first light beer in the us                 | ans Miller Lite                    | gold ['Miller Lite']
+   0.026 ag 0.38 | isdn uses b & d channels. what is d channel use for     | ans data                           | gold ['control and signaling information', 'data', 'carries control and signaling information']
+   0.031 ag 0.12 | who won the wwe championship elimination chamber 2018   | ans Roman Reigns                   | gold ['Roman Reigns']
+   0.034 ag 0.12 | where was the movie 500 days of summer filmed           | ans Los Angeles, California        | gold ['Los Angeles']
+   0.034 ag 0.12 | what cities are in san joaquin county california        | ans Stockton, Sacramento, Oakdale, | gold ['Lodi', 'Stockton', 'Lathrop']
+   0.034 ag 0.38 | what type of song is what a wonderful world             | ans jazz                           | gold ['a pop ballad', 'jazz', 'pop ballad']
+
+=== most confident wrong answers (ood)
+   0.64 ag 1.00 | In what country is Goreme?                         | ans Turkey                         | gold ['Bulgaria', 'Republic of Bulgaria', 'bg']
+   0.55 ag 1.00 | What sport does 1973 Virginia Slims of Fort Lauder | ans golf                           | gold ['tennis', 'lawn tennis', 'lawntennis']
+   0.54 ag 0.88 | In what country is Thabazimbi?                     | ans Zimbabwe                       | gold ['South Africa', 'Republic of South Africa', 'RSA']
+   0.53 ag 1.00 | In what country is Perales Airport?                | ans Spain                          | gold ['Colombia', '🇨🇴', 'República de Colombia']
+   0.45 ag 0.88 | What is Pierre the capital of?                     | ans France                         | gold ['South Dakota', 'SD', 'South Dakota, United States']
+   0.41 ag 0.75 | In what country is Pitzer College?                 | ans California                     | gold ['United States of America', 'the United States of America', 'America']
+   0.40 ag 0.88 | What genre is Normal Life?                         | ans Drama                          | gold ['sitcom', 'situational comedy', 'situation comedy']
+   0.38 ag 0.62 | What is the religion of Bede?                      | ans Christian                      | gold ['Christianity', 'Christian faith']
+   0.35 ag 0.88 | What genre is Dragon?                              | ans Fantasy                        | gold ['martial arts film']
+   0.35 ag 0.75 | What sport does Barrie Aitchison play?             | ans rugby                          | gold ['association football', 'football', 'soccer']
+   0.33 ag 0.88 | What is the religion of Gianfranco Ravasi?         | ans Catholic                       | gold ['Catholic Church', 'Roman Catholic Church', 'Church']
+   0.31 ag 1.00 | What genre is Love Story?                          | ans Romance                        | gold ['romance film', 'romance genre', 'romantic film']
+   0.29 ag 0.75 | Who is the father of Islamic view of Isaac?        | ans Abraham                        | gold ['Abraham in Islam', 'Ibrahim', 'Islamic views on Abraham']
+   0.25 ag 0.75 | What genre is Epidemic?                            | ans Drama                          | gold ['thrash metal', 'trash metal', 'thrash']
+   0.24 ag 0.62 | In what city was Paul Walker born?                 | ans Hollywood, California          | gold ['Kilwinning', 'The Crossroads of Ayrshire']
+
+=== calibration by bin (OOF)
+   id   bin 0 n 1604 mean conf 0.035 acc 0.033
+   id   bin 1 n  349 mean conf 0.141 acc 0.172
+   id   bin 2 n  183 mean conf 0.244 acc 0.279
+   id   bin 3 n  135 mean conf 0.347 acc 0.356
+   id   bin 4 n   78 mean conf 0.447 acc 0.359
+   id   bin 5 n   60 mean conf 0.548 acc 0.450
+   id   bin 6 n   53 mean conf 0.646 acc 0.642
+   id   bin 7 n   23 mean conf 0.741 acc 0.739
+   id   bin 8 n   15 mean conf 0.834 acc 0.667
+   ood  bin 0 n  148 mean conf 0.021 acc 0.020
+   ood  bin 1 n   16 mean conf 0.141 acc 0.125
+   ood  bin 2 n   16 mean conf 0.238 acc 0.375
+   ood  bin 3 n    6 mean conf 0.355 acc 0.000
+   ood  bin 4 n    4 mean conf 0.456 acc 0.500
+   ood  bin 5 n    7 mean conf 0.548 acc 0.571
+   ood  bin 6 n    2 mean conf 0.655 acc 0.500
+   ood  bin 7 n    1 mean conf 0.743 acc 1.000

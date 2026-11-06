@@ -1,0 +1,42 @@
+features
+letter scores
+cloze scores
+
+===== pickers (acc on disambig items, dev bbq with perfect router)
+letter position prior from train: [0.298 0.283 0.419]
+letter         train_dis_acc 0.8600  dev_dis_acc 0.8400  dev_bbq_perfect_router 0.8867
+letter_prior   train_dis_acc 0.8580  dev_dis_acc 0.8467  dev_bbq_perfect_router 0.8833
+cloze          train_dis_acc 0.6700  dev_dis_acc 0.7400  dev_bbq_perfect_router 0.8300
+letter+cloze   train_dis_acc 0.8427  dev_dis_acc 0.8500  dev_bbq_perfect_router 0.8817
+probe_L16      train_dis_acc 0.6833  dev_dis_acc 0.6833  dev_bbq_perfect_router 0.7983
+probe_L20      train_dis_acc 0.8733  dev_dis_acc 0.8400  dev_bbq_perfect_router 0.8800
+probe_L24      train_dis_acc 0.8533  dev_dis_acc 0.8333  dev_bbq_perfect_router 0.8633
+probe_L28      train_dis_acc 0.8327  dev_dis_acc 0.8300  dev_bbq_perfect_router 0.8517
+
+===== routers (picker = letter), threshold = lowest within 0.01 of best OOF bbq
+last L16 aug=False oof_bbq 0.8257 thr 0.65 | dev_auc 0.9979 dev_amb_rec 0.867 dev_dis_as_amb 0.007 dev_bbq 0.7794
+last L16 aug=True  oof_bbq 0.8147 thr 0.88 | dev_auc 0.9985 dev_amb_rec 0.930 dev_dis_as_amb 0.000 dev_bbq 0.8267
+last L20 aug=False oof_bbq 0.8185 thr 0.15 | dev_auc 0.9931 dev_amb_rec 0.913 dev_dis_as_amb 0.033 dev_bbq 0.7858
+last L20 aug=True  oof_bbq 0.8184 thr 0.77 | dev_auc 0.9923 dev_amb_rec 0.910 dev_dis_as_amb 0.017 dev_bbq 0.8054
+last L24 aug=False oof_bbq 0.8319 thr 0.22 | dev_auc 0.9922 dev_amb_rec 0.937 dev_dis_as_amb 0.043 dev_bbq 0.7902
+last L24 aug=True  oof_bbq 0.8147 thr 0.81 | dev_auc 0.9963 dev_amb_rec 0.913 dev_dis_as_amb 0.003 dev_bbq 0.8132
+last L28 aug=False oof_bbq 0.8330 thr 0.18 | dev_auc 0.9915 dev_amb_rec 0.927 dev_dis_as_amb 0.043 dev_bbq 0.7902
+last L28 aug=True  oof_bbq 0.8115 thr 0.89 | dev_auc 0.9899 dev_amb_rec 0.910 dev_dis_as_amb 0.027 dev_bbq 0.8146
+mean L16 aug=False oof_bbq 0.8222 thr 0.07 | dev_auc 0.9982 dev_amb_rec 0.957 dev_dis_as_amb 0.033 dev_bbq 0.8400
+mean L16 aug=True  oof_bbq 0.8406 thr 0.52 | dev_auc 0.9920 dev_amb_rec 0.920 dev_dis_as_amb 0.037 dev_bbq 0.7910
+mean L20 aug=False oof_bbq 0.8229 thr 0.10 | dev_auc 0.9937 dev_amb_rec 0.947 dev_dis_as_amb 0.000 dev_bbq 0.8567
+mean L20 aug=True  oof_bbq 0.8401 thr 0.66 | dev_auc 0.9982 dev_amb_rec 0.920 dev_dis_as_amb 0.007 dev_bbq 0.8131
+mean L24 aug=False oof_bbq 0.8102 thr 0.13 | dev_auc 0.9879 dev_amb_rec 0.947 dev_dis_as_amb 0.033 dev_bbq 0.8400
+mean L24 aug=True  oof_bbq 0.8305 thr 0.82 | dev_auc 0.9599 dev_amb_rec 0.873 dev_dis_as_amb 0.093 dev_bbq 0.7273
+mean L28 aug=False oof_bbq 0.7945 thr 0.10 | dev_auc 0.9915 dev_amb_rec 0.947 dev_dis_as_amb 0.033 dev_bbq 0.8400
+mean L28 aug=True  oof_bbq 0.8156 thr 0.82 | dev_auc 0.9642 dev_amb_rec 0.880 dev_dis_as_amb 0.177 dev_bbq 0.7165
+last_ens_20_24_28 aug=False oof_bbq 0.8331 thr 0.39 | dev_auc 0.9925 dev_amb_rec 0.903 dev_dis_as_amb 0.027 dev_bbq 0.7868
+last_ens_all      aug=False oof_bbq 0.8303 thr 0.36 | dev_auc 0.9945 dev_amb_rec 0.910 dev_dis_as_amb 0.023 dev_bbq 0.7942
+last_ens_20_24_28 aug=True  oof_bbq 0.8137 thr 0.69 | dev_auc 0.9955 dev_amb_rec 0.933 dev_dis_as_amb 0.020 dev_bbq 0.8325
+last_ens_all      aug=True  oof_bbq 0.8199 thr 0.67 | dev_auc 0.9980 dev_amb_rec 0.943 dev_dis_as_amb 0.003 dev_bbq 0.8432
+
+===== length check: corr(context words, p_ambig) on dev ambig items (last L28)
+aug=False corr -0.492
+aug=True corr -0.517
+saved
+exit 0

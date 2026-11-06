@@ -1,0 +1,2 @@
+same seed gives same output: True
+different seeds give different output: True

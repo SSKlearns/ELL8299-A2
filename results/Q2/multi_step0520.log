@@ -1,0 +1,129 @@
+setup done: {'key': 15485863, 'gamma': 0.25, 'delta': 1.5, 'score': 'az', 'n_real': 151643, 'size': 151936, 'new_tokens': 200, 'q0': 0.15, 'lo': 0.5, 'hi': 2.0, 'rep_k': 4} green tokens: 37910
+generated 32 / 100
+generated 64 / 100
+generated 96 / 100
+generated 100 / 100
+wrote /DATA/scratch/s_shashi/Repos/llms/A2/out/q2_multi/step0520/s42/generated_42.jsonl
+generation format ok: 100 rows, all 200 tokens, text matches decode
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+paraphrased 16 / 100
+paraphrased 32 / 100
+paraphrased 48 / 100
+paraphrased 64 / 100
+paraphrased 80 / 100
+paraphrased 96 / 100
+paraphrased 100 / 100
+wrote 4 perturbed files to /DATA/scratch/s_shashi/Repos/llms/A2/out/q2_multi/step0520/s42
+wrote sampled paraphrases (model default generation config) 100
+wrote human.jsonl and human_short.jsonl with 100 texts
+wrote /DATA/scratch/s_shashi/Repos/llms/A2/out/q2_multi/step0520/s42/scores_clean.jsonl (az)
+wrote /DATA/scratch/s_shashi/Repos/llms/A2/out/q2_multi/step0520/s42/scores_short.jsonl (az)
+wrote /DATA/scratch/s_shashi/Repos/llms/A2/out/q2_multi/step0520/s42/scores_substitution.jsonl (az)
+wrote /DATA/scratch/s_shashi/Repos/llms/A2/out/q2_multi/step0520/s42/scores_paraphrase.jsonl (az)
+wrote /DATA/scratch/s_shashi/Repos/llms/A2/out/q2_multi/step0520/s42/scores_parasample.jsonl (az)
+wrote /DATA/scratch/s_shashi/Repos/llms/A2/out/q2_multi/step0520/s42/scores_human.jsonl (az)
+wrote /DATA/scratch/s_shashi/Repos/llms/A2/out/q2_multi/step0520/s42/scores_human_short.jsonl (az)
+human        n=100 mean -0.032 sd 0.876 max 2.096
+human_short  n=100 mean 0.109 sd 0.943 max 2.565
+clean         TPR emp 1.000 (tau 1.63) | TPR gauss 1.000 (tau 2.01) | pos mean 9.42 median 9.46
+short         TPR emp 0.970 (tau 1.82) | TPR gauss 0.930 (tau 2.30) | pos mean 4.47 median 4.63
+substitution  TPR emp 1.000 (tau 1.63) | TPR gauss 0.990 (tau 2.01) | pos mean 6.46 median 6.58
+paraphrase    TPR emp 0.720 (tau 1.63) | TPR gauss 0.650 (tau 2.01) | pos mean 2.78 median 2.63
+parasample    TPR emp 0.650 (tau 1.63) | TPR gauss 0.580 (tau 2.01) | pos mean 2.37 median 2.32
+S_det with paraphrase emp 0.9225 | gauss 0.8925
+S_det with parasample emp 0.9050 | gauss 0.8750
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00, 33.25it/s]
+/DATA/scratch/s_shashi/Repos/llms/A2/Q2/../out/q2_multi/step0520/s42/generated_42.jsonl median PPL(M-oracle) = 23.804
+/DATA/scratch/s_shashi/Repos/llms/A2/Q2/../out/q2_multi/plain/s42/generated_42.jsonl median PPL(M-oracle) = 22.564
+Q = 1.0550 (first / second)
+setup done: {'key': 15485863, 'gamma': 0.25, 'delta': 1.5, 'score': 'az', 'n_real': 151643, 'size': 151936, 'new_tokens': 200, 'q0': 0.15, 'lo': 0.5, 'hi': 2.0, 'rep_k': 4} green tokens: 37910
+generated 32 / 100
+generated 64 / 100
+generated 96 / 100
+generated 100 / 100
+wrote /DATA/scratch/s_shashi/Repos/llms/A2/out/q2_multi/step0520/s43/generated_43.jsonl
+generation format ok: 100 rows, all 200 tokens, text matches decode
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+paraphrased 16 / 100
+paraphrased 32 / 100
+paraphrased 48 / 100
+paraphrased 64 / 100
+paraphrased 80 / 100
+paraphrased 96 / 100
+paraphrased 100 / 100
+wrote 4 perturbed files to /DATA/scratch/s_shashi/Repos/llms/A2/out/q2_multi/step0520/s43
+wrote sampled paraphrases (model default generation config) 100
+wrote human.jsonl and human_short.jsonl with 100 texts
+wrote /DATA/scratch/s_shashi/Repos/llms/A2/out/q2_multi/step0520/s43/scores_clean.jsonl (az)
+wrote /DATA/scratch/s_shashi/Repos/llms/A2/out/q2_multi/step0520/s43/scores_short.jsonl (az)
+wrote /DATA/scratch/s_shashi/Repos/llms/A2/out/q2_multi/step0520/s43/scores_substitution.jsonl (az)
+wrote /DATA/scratch/s_shashi/Repos/llms/A2/out/q2_multi/step0520/s43/scores_paraphrase.jsonl (az)
+wrote /DATA/scratch/s_shashi/Repos/llms/A2/out/q2_multi/step0520/s43/scores_parasample.jsonl (az)
+wrote /DATA/scratch/s_shashi/Repos/llms/A2/out/q2_multi/step0520/s43/scores_human.jsonl (az)
+wrote /DATA/scratch/s_shashi/Repos/llms/A2/out/q2_multi/step0520/s43/scores_human_short.jsonl (az)
+human        n=100 mean -0.032 sd 0.876 max 2.096
+human_short  n=100 mean 0.109 sd 0.943 max 2.565
+clean         TPR emp 1.000 (tau 1.63) | TPR gauss 1.000 (tau 2.01) | pos mean 9.21 median 9.33
+short         TPR emp 0.990 (tau 1.82) | TPR gauss 0.930 (tau 2.30) | pos mean 4.13 median 4.02
+substitution  TPR emp 0.990 (tau 1.63) | TPR gauss 0.990 (tau 2.01) | pos mean 6.23 median 6.31
+paraphrase    TPR emp 0.750 (tau 1.63) | TPR gauss 0.630 (tau 2.01) | pos mean 2.83 median 2.85
+parasample    TPR emp 0.670 (tau 1.63) | TPR gauss 0.610 (tau 2.01) | pos mean 2.53 median 2.33
+S_det with paraphrase emp 0.9325 | gauss 0.8875
+S_det with parasample emp 0.9125 | gauss 0.8825
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00, 34.20it/s]
+/DATA/scratch/s_shashi/Repos/llms/A2/Q2/../out/q2_multi/step0520/s43/generated_43.jsonl median PPL(M-oracle) = 21.188
+/DATA/scratch/s_shashi/Repos/llms/A2/Q2/../out/q2_multi/plain/s43/generated_43.jsonl median PPL(M-oracle) = 23.709
+Q = 0.8937 (first / second)
+setup done: {'key': 15485863, 'gamma': 0.25, 'delta': 1.5, 'score': 'az', 'n_real': 151643, 'size': 151936, 'new_tokens': 200, 'q0': 0.15, 'lo': 0.5, 'hi': 2.0, 'rep_k': 4} green tokens: 37910
+generated 32 / 100
+generated 64 / 100
+generated 96 / 100
+generated 100 / 100
+wrote /DATA/scratch/s_shashi/Repos/llms/A2/out/q2_multi/step0520/s44/generated_44.jsonl
+generation format ok: 100 rows, all 200 tokens, text matches decode
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+paraphrased 16 / 100
+paraphrased 32 / 100
+paraphrased 48 / 100
+paraphrased 64 / 100
+paraphrased 80 / 100
+paraphrased 96 / 100
+paraphrased 100 / 100
+wrote 4 perturbed files to /DATA/scratch/s_shashi/Repos/llms/A2/out/q2_multi/step0520/s44
+wrote sampled paraphrases (model default generation config) 100
+wrote human.jsonl and human_short.jsonl with 100 texts
+wrote /DATA/scratch/s_shashi/Repos/llms/A2/out/q2_multi/step0520/s44/scores_clean.jsonl (az)
+wrote /DATA/scratch/s_shashi/Repos/llms/A2/out/q2_multi/step0520/s44/scores_short.jsonl (az)
+wrote /DATA/scratch/s_shashi/Repos/llms/A2/out/q2_multi/step0520/s44/scores_substitution.jsonl (az)
+wrote /DATA/scratch/s_shashi/Repos/llms/A2/out/q2_multi/step0520/s44/scores_paraphrase.jsonl (az)
+wrote /DATA/scratch/s_shashi/Repos/llms/A2/out/q2_multi/step0520/s44/scores_parasample.jsonl (az)
+wrote /DATA/scratch/s_shashi/Repos/llms/A2/out/q2_multi/step0520/s44/scores_human.jsonl (az)
+wrote /DATA/scratch/s_shashi/Repos/llms/A2/out/q2_multi/step0520/s44/scores_human_short.jsonl (az)
+human        n=100 mean -0.032 sd 0.876 max 2.096
+human_short  n=100 mean 0.109 sd 0.943 max 2.565
+clean         TPR emp 1.000 (tau 1.63) | TPR gauss 1.000 (tau 2.01) | pos mean 9.40 median 9.45
+short         TPR emp 0.980 (tau 1.82) | TPR gauss 0.970 (tau 2.30) | pos mean 4.36 median 4.34
+substitution  TPR emp 1.000 (tau 1.63) | TPR gauss 1.000 (tau 2.01) | pos mean 6.33 median 6.26
+paraphrase    TPR emp 0.760 (tau 1.63) | TPR gauss 0.670 (tau 2.01) | pos mean 2.74 median 2.54
+parasample    TPR emp 0.700 (tau 1.63) | TPR gauss 0.600 (tau 2.01) | pos mean 2.44 median 2.53
+S_det with paraphrase emp 0.9350 | gauss 0.9100
+S_det with parasample emp 0.9200 | gauss 0.8925
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00, 32.35it/s]
+/DATA/scratch/s_shashi/Repos/llms/A2/Q2/../out/q2_multi/step0520/s44/generated_44.jsonl median PPL(M-oracle) = 23.065
+/DATA/scratch/s_shashi/Repos/llms/A2/Q2/../out/q2_multi/plain/s44/generated_44.jsonl median PPL(M-oracle) = 24.192
+Q = 0.9534 (first / second)
+mz   | clean 1.00/1.00 | short 0.95/0.93 | subst 1.00/1.00 | parap 0.71/0.65 | paras 0.62/0.56 || S_det(para) 0.9150/0.8950  S_det(sampled para) 0.8925/0.8725
+oz   | clean 1.00/1.00 | short 0.88/0.90 | subst 1.00/1.00 | parap 0.68/0.64 | paras 0.62/0.56 || S_det(para) 0.8900/0.8850  S_det(sampled para) 0.8750/0.8650
+az   | clean 1.00/1.00 | short 0.97/0.93 | subst 1.00/0.99 | parap 0.72/0.65 | paras 0.65/0.58 || S_det(para) 0.9225/0.8925  S_det(sampled para) 0.9050/0.8750
+aoz  | clean 1.00/1.00 | short 0.94/0.92 | subst 1.00/1.00 | parap 0.68/0.66 | paras 0.64/0.59 || S_det(para) 0.9050/0.8950  S_det(sampled para) 0.8950/0.8775
+(each cell: TPR with the spec threshold / with the Gaussian threshold)
+mz   | clean 1.00/1.00 | short 0.97/0.94 | subst 0.99/0.99 | parap 0.67/0.66 | paras 0.68/0.60 || S_det(para) 0.9075/0.8975  S_det(sampled para) 0.9100/0.8825
+oz   | clean 1.00/1.00 | short 0.88/0.90 | subst 0.99/0.99 | parap 0.60/0.55 | paras 0.65/0.59 || S_det(para) 0.8675/0.8600  S_det(sampled para) 0.8800/0.8700
+az   | clean 1.00/1.00 | short 0.99/0.93 | subst 0.99/0.99 | parap 0.75/0.63 | paras 0.67/0.61 || S_det(para) 0.9325/0.8875  S_det(sampled para) 0.9125/0.8825
+aoz  | clean 1.00/1.00 | short 0.92/0.91 | subst 0.99/0.99 | parap 0.67/0.64 | paras 0.67/0.65 || S_det(para) 0.8950/0.8850  S_det(sampled para) 0.8950/0.8875
+(each cell: TPR with the spec threshold / with the Gaussian threshold)
+mz   | clean 1.00/1.00 | short 0.99/0.96 | subst 1.00/0.99 | parap 0.72/0.67 | paras 0.66/0.64 || S_det(para) 0.9275/0.9050  S_det(sampled para) 0.9125/0.8975
+oz   | clean 1.00/1.00 | short 0.89/0.90 | subst 0.99/0.99 | parap 0.69/0.63 | paras 0.62/0.58 || S_det(para) 0.8925/0.8800  S_det(sampled para) 0.8750/0.8675
+az   | clean 1.00/1.00 | short 0.98/0.97 | subst 1.00/1.00 | parap 0.76/0.67 | paras 0.70/0.60 || S_det(para) 0.9350/0.9100  S_det(sampled para) 0.9200/0.8925
+aoz  | clean 1.00/1.00 | short 0.96/0.96 | subst 1.00/1.00 | parap 0.70/0.66 | paras 0.63/0.61 || S_det(para) 0.9150/0.9050  S_det(sampled para) 0.8975/0.8925
+(each cell: TPR with the spec threshold / with the Gaussian threshold)

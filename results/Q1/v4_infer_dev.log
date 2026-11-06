@@ -1,0 +1,7 @@
+rows: 600
+called ambiguous: 300 / 600 (mode prior, fixed thr 0.23)
+wrote /DATA/scratch/s_shashi/Repos/llms/A2/results/Q1/v4_bias_dev.jsonl
+
+real	0m47.003s
+user	1m23.623s
+sys	0m6.539s

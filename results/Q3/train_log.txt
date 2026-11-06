@@ -1,0 +1,167 @@
+shots: [['who sold out jesus for 30 pieces of silver', 'Judas Iscariot'], ['what does g stand for in ncis los angeles', 'Grisha'], ['where was 2017 beauty and the beast filmed', 'Surrey, United Kingdom'], ['when was catch me if you can made', '2002'], ['one piece episode 534 english dubbed release date', 'February 5, 2012']]
+generated 32 / 2000
+generated 64 / 2000
+generated 96 / 2000
+generated 128 / 2000
+generated 160 / 2000
+generated 192 / 2000
+generated 224 / 2000
+generated 256 / 2000
+generated 288 / 2000
+generated 320 / 2000
+generated 352 / 2000
+generated 384 / 2000
+generated 416 / 2000
+generated 448 / 2000
+generated 480 / 2000
+generated 512 / 2000
+generated 544 / 2000
+generated 576 / 2000
+generated 608 / 2000
+generated 640 / 2000
+generated 672 / 2000
+generated 704 / 2000
+generated 736 / 2000
+generated 768 / 2000
+generated 800 / 2000
+generated 832 / 2000
+generated 864 / 2000
+generated 896 / 2000
+generated 928 / 2000
+generated 960 / 2000
+generated 992 / 2000
+generated 1024 / 2000
+generated 1056 / 2000
+generated 1088 / 2000
+generated 1120 / 2000
+generated 1152 / 2000
+generated 1184 / 2000
+generated 1216 / 2000
+generated 1248 / 2000
+generated 1280 / 2000
+generated 1312 / 2000
+generated 1344 / 2000
+generated 1376 / 2000
+generated 1408 / 2000
+generated 1440 / 2000
+generated 1472 / 2000
+generated 1504 / 2000
+generated 1536 / 2000
+generated 1568 / 2000
+generated 1600 / 2000
+generated 1632 / 2000
+generated 1664 / 2000
+generated 1696 / 2000
+generated 1728 / 2000
+generated 1760 / 2000
+generated 1792 / 2000
+generated 1824 / 2000
+generated 1856 / 2000
+generated 1888 / 2000
+generated 1920 / 2000
+generated 1952 / 2000
+generated 1984 / 2000
+generated 2000 / 2000
+generated 32 / 500
+generated 64 / 500
+generated 96 / 500
+generated 128 / 500
+generated 160 / 500
+generated 192 / 500
+generated 224 / 500
+generated 256 / 500
+generated 288 / 500
+generated 320 / 500
+generated 352 / 500
+generated 384 / 500
+generated 416 / 500
+generated 448 / 500
+generated 480 / 500
+generated 500 / 500
+generated 32 / 200
+generated 64 / 200
+generated 96 / 200
+generated 128 / 200
+generated 160 / 200
+generated 192 / 200
+generated 200 / 200
+q3_qa_train     accuracy of greedy answer 0.1325
+q3_qa_dev       accuracy of greedy answer 0.1260
+q3_qa_dev_ood   accuracy of greedy answer 0.0950
+
+=== baseline: confidence = exp(mean token logprob), abstain if conf < 0.5
+  baseline dev(id)  AUROC 0.8276 ECE 0.3932 sel 0.0000 (cov 0.518 risk 0.784) set 0.4781
+  baseline dev_ood  AUROC 0.7717 ECE 0.2989 sel 0.0000 (cov 0.285 risk 0.772) set 0.4909
+
+=== hidden state probes (OOF AUROC)
+  hp14  auroc id 0.7508 ood 0.8857 mean 0.8183
+  ha14  auroc id 0.7959 ood 0.7976 mean 0.7968
+  hp20  auroc id 0.7707 ood 0.8581 mean 0.8144
+  ha20  auroc id 0.7554 ood 0.7505 mean 0.7529
+  hp26  auroc id 0.7220 ood 0.7584 mean 0.7402
+  ha26  auroc id 0.7751 ood 0.7531 mean 0.7641
+picked probe hp14
+
+=== calibrators (OOF), choose by mean of dev(id) and dev_ood set score
+  plain w_ood=1.0 margin=0.0   dev(id)  AUROC 0.8488 ECE 0.0212 sel 0.0020 (cov 0.002 risk 0.000) set 0.6099
+  plain w_ood=1.0 margin=0.0   dev_ood  AUROC 0.8878 ECE 0.0337 sel 0.0000 (cov 0.000 risk 0.000) set 0.6180
+  plain w_ood=1.0 margin=0.0   train    AUROC 0.8519 ECE 0.0168 sel 0.0000 (cov 0.005 risk 0.364) set 0.6117
+  plain w_ood=1.0 margin=0.03  dev(id)  AUROC 0.8488 ECE 0.0212 sel 0.0000 (cov 0.000 risk 0.000) set 0.6092
+  plain w_ood=1.0 margin=0.03  dev_ood  AUROC 0.8878 ECE 0.0337 sel 0.0000 (cov 0.000 risk 0.000) set 0.6180
+  plain w_ood=1.0 margin=0.03  train    AUROC 0.8519 ECE 0.0168 sel 0.0010 (cov 0.002 risk 0.250) set 0.6120
+  plain w_ood=1.0 margin=0.05  dev(id)  AUROC 0.8488 ECE 0.0212 sel 0.0000 (cov 0.000 risk 0.000) set 0.6092
+  plain w_ood=1.0 margin=0.05  dev_ood  AUROC 0.8878 ECE 0.0337 sel 0.0000 (cov 0.000 risk 0.000) set 0.6180
+  plain w_ood=1.0 margin=0.05  train    AUROC 0.8519 ECE 0.0168 sel 0.0005 (cov 0.001 risk 0.000) set 0.6119
+  plain w_ood=1.0 margin=0.08  dev(id)  AUROC 0.8488 ECE 0.0212 sel 0.0000 (cov 0.000 risk 0.000) set 0.6092
+  plain w_ood=1.0 margin=0.08  dev_ood  AUROC 0.8878 ECE 0.0337 sel 0.0000 (cov 0.000 risk 0.000) set 0.6180
+  plain w_ood=1.0 margin=0.08  train    AUROC 0.8519 ECE 0.0168 sel 0.0000 (cov 0.000 risk 0.000) set 0.6117
+  plain w_ood=1.0 margin=0.1   dev(id)  AUROC 0.8488 ECE 0.0212 sel 0.0000 (cov 0.000 risk 0.000) set 0.6092
+  plain w_ood=1.0 margin=0.1   dev_ood  AUROC 0.8878 ECE 0.0337 sel 0.0000 (cov 0.000 risk 0.000) set 0.6180
+  plain w_ood=1.0 margin=0.1   train    AUROC 0.8519 ECE 0.0168 sel 0.0000 (cov 0.000 risk 0.000) set 0.6117
+  plain w_ood=5.0 margin=0.0   dev(id)  AUROC 0.8468 ECE 0.0224 sel 0.0080 (cov 0.008 risk 0.000) set 0.6108
+  plain w_ood=5.0 margin=0.0   dev_ood  AUROC 0.8994 ECE 0.0281 sel 0.0000 (cov 0.000 risk 0.000) set 0.6237
+  plain w_ood=5.0 margin=0.0   train    AUROC 0.8493 ECE 0.0190 sel 0.0000 (cov 0.012 risk 0.333) set 0.6101
+  plain w_ood=5.0 margin=0.03  dev(id)  AUROC 0.8468 ECE 0.0224 sel 0.0000 (cov 0.000 risk 0.000) set 0.6081
+  plain w_ood=5.0 margin=0.03  dev_ood  AUROC 0.8994 ECE 0.0281 sel 0.0000 (cov 0.000 risk 0.000) set 0.6237
+  plain w_ood=5.0 margin=0.03  train    AUROC 0.8493 ECE 0.0190 sel 0.0000 (cov 0.007 risk 0.429) set 0.6101
+  plain w_ood=5.0 margin=0.05  dev(id)  AUROC 0.8468 ECE 0.0224 sel 0.0000 (cov 0.000 risk 0.000) set 0.6081
+  plain w_ood=5.0 margin=0.05  dev_ood  AUROC 0.8994 ECE 0.0281 sel 0.0000 (cov 0.000 risk 0.000) set 0.6237
+  plain w_ood=5.0 margin=0.05  train    AUROC 0.8493 ECE 0.0190 sel 0.0000 (cov 0.004 risk 0.429) set 0.6101
+  plain w_ood=5.0 margin=0.08  dev(id)  AUROC 0.8468 ECE 0.0224 sel 0.0000 (cov 0.000 risk 0.000) set 0.6081
+  plain w_ood=5.0 margin=0.08  dev_ood  AUROC 0.8994 ECE 0.0281 sel 0.0000 (cov 0.000 risk 0.000) set 0.6237
+  plain w_ood=5.0 margin=0.08  train    AUROC 0.8493 ECE 0.0190 sel 0.0005 (cov 0.001 risk 0.000) set 0.6103
+  plain w_ood=5.0 margin=0.1   dev(id)  AUROC 0.8468 ECE 0.0224 sel 0.0000 (cov 0.000 risk 0.000) set 0.6081
+  plain w_ood=5.0 margin=0.1   dev_ood  AUROC 0.8994 ECE 0.0281 sel 0.0000 (cov 0.000 risk 0.000) set 0.6237
+  plain w_ood=5.0 margin=0.1   train    AUROC 0.8493 ECE 0.0190 sel 0.0000 (cov 0.000 risk 0.000) set 0.6101
+  inter w_ood=1.0 margin=0.0   dev(id)  AUROC 0.8497 ECE 0.0229 sel 0.0000 (cov 0.000 risk 0.000) set 0.6089
+  inter w_ood=1.0 margin=0.0   dev_ood  AUROC 0.9032 ECE 0.0352 sel 0.0000 (cov 0.015 risk 0.333) set 0.6227
+  inter w_ood=1.0 margin=0.0   train    AUROC 0.8514 ECE 0.0160 sel 0.0000 (cov 0.004 risk 0.333) set 0.6118
+  inter w_ood=1.0 margin=0.03  dev(id)  AUROC 0.8497 ECE 0.0229 sel 0.0000 (cov 0.000 risk 0.000) set 0.6089
+  inter w_ood=1.0 margin=0.03  dev_ood  AUROC 0.9032 ECE 0.0352 sel 0.0000 (cov 0.000 risk 0.000) set 0.6227
+  inter w_ood=1.0 margin=0.03  train    AUROC 0.8514 ECE 0.0160 sel 0.0000 (cov 0.001 risk 0.500) set 0.6118
+  inter w_ood=1.0 margin=0.05  dev(id)  AUROC 0.8497 ECE 0.0229 sel 0.0000 (cov 0.000 risk 0.000) set 0.6089
+  inter w_ood=1.0 margin=0.05  dev_ood  AUROC 0.9032 ECE 0.0352 sel 0.0000 (cov 0.000 risk 0.000) set 0.6227
+  inter w_ood=1.0 margin=0.05  train    AUROC 0.8514 ECE 0.0160 sel 0.0000 (cov 0.000 risk 0.000) set 0.6118
+  inter w_ood=1.0 margin=0.08  dev(id)  AUROC 0.8497 ECE 0.0229 sel 0.0000 (cov 0.000 risk 0.000) set 0.6089
+  inter w_ood=1.0 margin=0.08  dev_ood  AUROC 0.9032 ECE 0.0352 sel 0.0000 (cov 0.000 risk 0.000) set 0.6227
+  inter w_ood=1.0 margin=0.08  train    AUROC 0.8514 ECE 0.0160 sel 0.0000 (cov 0.000 risk 0.000) set 0.6118
+  inter w_ood=1.0 margin=0.1   dev(id)  AUROC 0.8497 ECE 0.0229 sel 0.0000 (cov 0.000 risk 0.000) set 0.6089
+  inter w_ood=1.0 margin=0.1   dev_ood  AUROC 0.9032 ECE 0.0352 sel 0.0000 (cov 0.000 risk 0.000) set 0.6227
+  inter w_ood=1.0 margin=0.1   train    AUROC 0.8514 ECE 0.0160 sel 0.0000 (cov 0.000 risk 0.000) set 0.6118
+  inter w_ood=5.0 margin=0.0   dev(id)  AUROC 0.8500 ECE 0.0265 sel 0.0000 (cov 0.000 risk 0.000) set 0.6078
+  inter w_ood=5.0 margin=0.0   dev_ood  AUROC 0.8883 ECE 0.0468 sel 0.0000 (cov 0.015 risk 0.333) set 0.6138
+  inter w_ood=5.0 margin=0.0   train    AUROC 0.8514 ECE 0.0166 sel 0.0000 (cov 0.004 risk 0.333) set 0.6116
+  inter w_ood=5.0 margin=0.03  dev(id)  AUROC 0.8500 ECE 0.0265 sel 0.0000 (cov 0.000 risk 0.000) set 0.6078
+  inter w_ood=5.0 margin=0.03  dev_ood  AUROC 0.8883 ECE 0.0468 sel 0.0050 (cov 0.005 risk 0.000) set 0.6155
+  inter w_ood=5.0 margin=0.03  train    AUROC 0.8514 ECE 0.0166 sel 0.0000 (cov 0.002 risk 0.333) set 0.6116
+  inter w_ood=5.0 margin=0.05  dev(id)  AUROC 0.8500 ECE 0.0265 sel 0.0000 (cov 0.000 risk 0.000) set 0.6078
+  inter w_ood=5.0 margin=0.05  dev_ood  AUROC 0.8883 ECE 0.0468 sel 0.0000 (cov 0.000 risk 0.000) set 0.6138
+  inter w_ood=5.0 margin=0.05  train    AUROC 0.8514 ECE 0.0166 sel 0.0000 (cov 0.000 risk 0.000) set 0.6116
+  inter w_ood=5.0 margin=0.08  dev(id)  AUROC 0.8500 ECE 0.0265 sel 0.0000 (cov 0.000 risk 0.000) set 0.6078
+  inter w_ood=5.0 margin=0.08  dev_ood  AUROC 0.8883 ECE 0.0468 sel 0.0000 (cov 0.000 risk 0.000) set 0.6138
+  inter w_ood=5.0 margin=0.08  train    AUROC 0.8514 ECE 0.0166 sel 0.0000 (cov 0.000 risk 0.000) set 0.6116
+  inter w_ood=5.0 margin=0.1   dev(id)  AUROC 0.8500 ECE 0.0265 sel 0.0000 (cov 0.000 risk 0.000) set 0.6078
+  inter w_ood=5.0 margin=0.1   dev_ood  AUROC 0.8883 ECE 0.0468 sel 0.0000 (cov 0.000 risk 0.000) set 0.6138
+  inter w_ood=5.0 margin=0.1   train    AUROC 0.8514 ECE 0.0166 sel 0.0000 (cov 0.000 risk 0.000) set 0.6116
+picked: (np.float64(0.6172785026002011), 'plain', 5.0, 0.0)
+saved to /DATA/scratch/s_shashi/Repos/llms/A2/out/q3 {'shots': [['who sold out jesus for 30 pieces of silver', 'Judas Iscariot'], ['what does g stand for in ncis los angeles', 'Grisha'], ['where was 2017 beauty and the beast filmed', 'Surrey, United Kingdom'], ['when was catch me if you can made', '2002'], ['one piece episode 534 english dubbed release date', 'February 5, 2012']], 'k': 8, 'key': 'hp14', 'kind': 'plain', 'w_ood': 5.0, 'margin': 0.0, 'oof_mean_set': np.float64(0.6172785026002011)}

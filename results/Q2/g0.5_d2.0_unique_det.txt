@@ -1,0 +1,5 @@
+clean         TPR@1%FPR = 1.000  (tau 1.509, mean pos score 6.537)
+short         TPR@1%FPR = 1.000  (tau 1.761, mean pos score 3.580)
+substitution  TPR@1%FPR = 1.000  (tau 1.509, mean pos score 5.190)
+paraphrase    TPR@1%FPR = 0.450  (tau 1.509, mean pos score 1.401)
+S_det = 0.8625

@@ -1,0 +1,1 @@
+generate 300 prompts: 61 s (limit 1800 s), detect 500 texts: 15 s (limit 900 s)

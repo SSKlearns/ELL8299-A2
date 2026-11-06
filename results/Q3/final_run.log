@@ -1,0 +1,62 @@
+generated 32 / 1000
+generated 64 / 1000
+generated 96 / 1000
+generated 128 / 1000
+generated 160 / 1000
+generated 192 / 1000
+generated 224 / 1000
+generated 256 / 1000
+generated 288 / 1000
+generated 320 / 1000
+generated 352 / 1000
+generated 384 / 1000
+generated 416 / 1000
+generated 448 / 1000
+generated 480 / 1000
+generated 512 / 1000
+generated 544 / 1000
+generated 576 / 1000
+generated 608 / 1000
+generated 640 / 1000
+generated 672 / 1000
+generated 704 / 1000
+generated 736 / 1000
+generated 768 / 1000
+generated 800 / 1000
+generated 832 / 1000
+generated 864 / 1000
+generated 896 / 1000
+generated 928 / 1000
+generated 960 / 1000
+generated 992 / 1000
+generated 1000 / 1000
+wrote /DATA/scratch/s_shashi/Repos/llms/A2/out/q3/pred_timing_1000.jsonl answered 12 / 1000
+infer 1000 questions: 109 s (limit 2700 s)
+generated 32 / 500
+generated 64 / 500
+generated 96 / 500
+generated 128 / 500
+generated 160 / 500
+generated 192 / 500
+generated 224 / 500
+generated 256 / 500
+generated 288 / 500
+generated 320 / 500
+generated 352 / 500
+generated 384 / 500
+generated 416 / 500
+generated 448 / 500
+generated 480 / 500
+generated 500 / 500
+wrote /DATA/scratch/s_shashi/Repos/llms/A2/out/q3/pred_q3_qa_dev_input.jsonl answered 4 / 500
+accuracy 0.1260 | AUROC 0.9352 | ECE 0.0397 | selective 0.0080 (coverage 0.008, risk 0.000) | set score 0.6345
+generated 32 / 200
+generated 64 / 200
+generated 96 / 200
+generated 128 / 200
+generated 160 / 200
+generated 192 / 200
+generated 200 / 200
+wrote /DATA/scratch/s_shashi/Repos/llms/A2/out/q3/pred_q3_qa_dev_ood_input.jsonl answered 0 / 200
+accuracy 0.0950 | AUROC 0.9450 | ECE 0.0328 | selective 0.0000 (coverage 0.000, risk 0.000) | set score 0.6374
+exit code 0
